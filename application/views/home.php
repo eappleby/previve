@@ -9,12 +9,12 @@
     <title>Fixed Top Navbar Example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php site_url("assets/css/bootstrap.css") ?>" rel="stylesheet">
+    <link href="<?php echo site_url("assets/css/bootstrap.css") ?>" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="<?php site_url("assets/js/html5shiv.js"); ?>"></script>
-      <script src=""<?php site_url("assets/js/respond.min.js"); ?>""></script>
+      <script src="<?php echo site_url("assets/js/html5shiv.js"); ?>"></script>
+      <script src=""<?php echo site_url("assets/js/respond.min.js"); ?>"></script>
     <![endif]-->
   </head>
 
