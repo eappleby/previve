@@ -37,10 +37,13 @@
 .featurette {
 padding-top: 120px;
 overflow:hidden;
-padding-right:50px;
 }
 
-.featurette img {
+.featurette-image {
+padding-right:50px;	
+}
+
+.featurette-image img {
 height: auto;
 max-width: 100%;
 vertical-align: middle;
