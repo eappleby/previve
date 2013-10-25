@@ -50,25 +50,23 @@ vertical-align: middle;
 border: 0;	
 }
 
-@media (max-width: 980px)
+@media (max-width: 980px) {
 .featurette-image.pull-left, .featurette-image.pull-right {
 display: block;
 float: none;
 max-width: 40%;
 margin: 0 auto 20px;
 }
-
-@media (max-width: 980px)
 .featurette {
 height: auto;
 padding: 0;
 }
-
-@media (max-width: 767px)
+}
+@media (max-width: 767px) {
 .featurette-heading {
 font-size: 30px;
 }
-
+}
 .featurette-image.pull-left {
 margin-right: 40px;
 }
