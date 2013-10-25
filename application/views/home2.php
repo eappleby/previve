@@ -54,7 +54,7 @@ border: 0;
 .featurette-image.pull-left, .featurette-image.pull-right {
 display: block;
 float: none;
-max-width: 40%;
+max-width: 50%;
 margin: 0 auto 20px;
 }
 .featurette {
