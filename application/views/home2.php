@@ -14,7 +14,49 @@
       body {
         padding-top: 20px;
         padding-bottom: 40px;
-      }
+
+		/* IE10 Consumer Preview */ 
+		background-image: -ms-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+
+		/* Opera */ 
+		background-image: -o-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDFFFF), color-stop(.5, #FFFFFF));
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+
+		/* W3C Markup, IE10 Release Preview */ 
+		background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 50%);      
+	  }
+
+.featurette {
+padding-top: 120px;
+overflow: hidden;
+}
+
+.featurette-image.pull-left {
+margin-right: 40px;
+}
+
+.featurette-image {
+margin-top: -120px;
+}
+
+.featurette-heading {
+font-size: 50px;
+font-weight: 300;
+line-height: 1;
+letter-spacing: -1px;
+}
+
+	  .wrapper {
+	  	background:#ffffff;
+	  }
 
       /* Custom container */
       .container-narrow {
@@ -59,17 +101,10 @@
   <body>
 
     <div class="container-narrow">
-
       <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="muted">Project name</h3>
+        <h3 class="logo">Previve</h3>
+        <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
       </div>
-
-      <hr>
 
       <div class="jumbotron">
         <h1>Super awesome marketing speak!</h1>
@@ -77,7 +112,12 @@
         <a class="btn btn-large btn-success" href="#">Sign up today</a>
       </div>
 
-      <hr>
+	  <div class="featurette">
+		<img class="featurette-image pull-left" src="<?php echo site_url("assets/img/previve-packaging-1-box.png"); ?>">
+		<p><strong>ENERGIZES</strong> your night</p>
+		<p><strong>PREVENTS</strong> hangover symptons</p>
+		<p><strong>PROMOTES</strong> long-term wellness</p>
+	  </div>
 
       <div class="row-fluid marketing">
         <div class="span6">
@@ -102,14 +142,19 @@
           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
       </div>
+  </div>
 
-      <hr>
+  <div class="wrapper">
+
+    <div class="container-narrow">
 
       <div class="footer">
         <p>&copy; Company 2013</p>
       </div>
 
     </div> <!-- /container -->
+
+  </div>
 
     <!-- Le javascript
     ================================================== -->
