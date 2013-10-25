@@ -58,15 +58,6 @@ letter-spacing: -1px;
 	  	background:#ffffff;
 	  }
 
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
       .masthead {
       	text-align:center;
       }
@@ -90,7 +81,7 @@ letter-spacing: -1px;
 
   <body>
 
-    <div class="container-narrow">
+    <div class="container">
       <div class="masthead">
         <h3 class="logo">Previve</h3>
         <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
