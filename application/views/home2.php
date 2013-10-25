@@ -36,7 +36,6 @@
 
 .featurette {
 padding-top: 120px;
-overflow: hidden;
 }
 
 .featurette-image.pull-left {
@@ -60,6 +59,7 @@ letter-spacing: -1px;
 
       .masthead {
       	text-align:center;
+      	padding-bottom:50px;
       }
 
       /* Supporting marketing content */
