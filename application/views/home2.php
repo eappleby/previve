@@ -67,18 +67,8 @@ letter-spacing: -1px;
         margin: 30px 0;
       }
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
+      .masthead {
+      	text-align:center;
       }
 
       /* Supporting marketing content */
@@ -106,42 +96,13 @@ letter-spacing: -1px;
         <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
       </div>
 
-      <div class="jumbotron">
-        <h1>Super awesome marketing speak!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="#">Sign up today</a>
-      </div>
-
 	  <div class="featurette">
-		<img class="featurette-image pull-left" src="<?php echo site_url("assets/img/previve-packaging-1-box.png"); ?>">
+		<img class="featurette-image pull-left" src="<?php echo site_url("assets/img/previve-packaging-1-box.jpg"); ?>">
 		<p><strong>ENERGIZES</strong> your night</p>
 		<p><strong>PREVENTS</strong> hangover symptons</p>
 		<p><strong>PROMOTES</strong> long-term wellness</p>
 	  </div>
 
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
   </div>
 
   <div class="wrapper">
