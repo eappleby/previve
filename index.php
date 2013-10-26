@@ -96,6 +96,7 @@
          }
          .featurette-messaging {
          padding-top:0;
+         text-align:center;
          }
          .featurette-image {
          float:none;
