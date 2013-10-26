@@ -36,10 +36,23 @@
  		.navbar-brand {
  		padding: 5px 15px;
  		}
- 		li.navbar-how-it-works{
- 		width: 86px;
- 		margin-right:15px;
+ 		.title {
+ 		text-align: center;
+		padding: 40px 0;
+		font-size: 26px;
  		}
+ 		ul.row-how-it-works {
+ 		list-style:none;
+ 		}
+ 		ul.row-how-it-works li.navbar-how-it-works{
+		width: 10%;
+		margin-right: 10%;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #000;
+ 		}
+ 		ul.row-how-it-works li.navbar-how-it-works:last-item{
+ 		margin-right:0;
+ 		}	
  		@media (min-width: 768px) {
  		.navbar-nav > li > a {
  		padding: 5px 15px;
@@ -82,18 +95,14 @@
     	<div class="title">
     		<span>HOW IT</span> WORKS
     	</div>
-    </div>
 
-	<div class="wrapper wrapper-navbar-hp">
-		<div class="container">
-			<ul class="row">
-				<li class="navbar-how-it-works col-sm-1"><a id="how-energizes" href="#">Energizes</a></li>
-				<li class="navbar-how-it-works col-sm-1"><a id="how-prevents" href="#">Prevents</a></li>
-				<li class="navbar-how-it-works col-sm-1"><a id="how-promotes" href="#">Promotes</a></li>
-				<li class="navbar-how-it-works col-sm-1"><a id="how-convenient" href="#">Convenient</a></li>
-				<li class="navbar-how-it-works col-sm-1"><a id="how-affordable" href="#">Affordable</a></li>
-			</ul>
-		</div>
+		<ul class="row row-how-it-works">
+			<li class="navbar-how-it-works col-sm-1"><a id="how-energizes" href="#">Energizes</a></li>
+			<li class="navbar-how-it-works col-sm-1"><a id="how-prevents" href="#">Prevents</a></li>
+			<li class="navbar-how-it-works col-sm-1"><a id="how-promotes" href="#">Promotes</a></li>
+			<li class="navbar-how-it-works col-sm-1"><a id="how-convenient" href="#">Convenient</a></li>
+			<li class="navbar-how-it-works col-sm-1"><a id="how-affordable" href="#">Affordable</a></li>
+		</ul>
 	</div>
 
 
