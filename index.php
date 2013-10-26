@@ -59,6 +59,9 @@
          .featurette-image.pull-left {
          margin-right: 40px;
          }
+         .featurette-image-wrapper {
+         text-align:right;
+         }
          .featurette-image {
          margin-top: -120px;
          }
@@ -105,8 +108,8 @@
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
          <div class="row featurette">
-         	<div class="col-md-6">
-	            <img class="featurette-image pull-right" src="assets/img/previve-packaging-1-box.png">
+         	<div class="col-md-6 featurette-image-wrapper">
+	            <img class="featurette-image" src="assets/img/previve-packaging-1-box.png">
 	        </div>
 	        <div class="col-md-6">
 	            <p><strong>ENERGIZES</strong> your night</p>
