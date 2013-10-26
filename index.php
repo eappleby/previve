@@ -68,7 +68,7 @@
          text-align:center;
          }
 
-         @media (max-width: 1200px) {
+         @media (max-width: 1199px) {
          .featurette {
          padding-left: 0;
 		 }
