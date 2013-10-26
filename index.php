@@ -73,16 +73,22 @@
          .navbar-hp {
          text-align:center;
          }
+
+         @media (max-width: 1200px) {
+         .featurette {
+         padding-left: 0;
+		 }
+		 }
+
          @media (max-width: 980px) {
-         .featurette-image.pull-left, .featurette-image.pull-right {
+         .featurette {
+         height: auto;
+         }
+         .featurette-image {
          display: block;
          float: none;
          max-width: 50%;
          margin: 0 auto 20px;
-         }
-         .featurette {
-         height: auto;
-         padding-left: 0;
          }
          }
          @media (max-width: 767px) {
