@@ -72,7 +72,7 @@
  		}
  		.content {
  		width: 570px;
- 		margin: 80px auto;
+ 		margin: 80px auto 120px;
  		line-height:25px;
  		}
  		.content .content-anchor {
@@ -91,6 +91,67 @@
  		color: #000080;
  		display:inline;
  		}
+ 		.periodic-table {
+ 		width:100%;
+ 		margin: 0 auto;
+ 		}
+ 		.periodic-table .row {
+ 		display:block;
+ 		margin:0 0 20px 0;
+ 		}
+ 		.periodic-table .row .sub-row {
+ 		display:inline-block;
+ 		}
+ 		.periodic-table .row .sub-row .element {
+		width:70px;
+		height:70px;
+		background-image:url("assets/img/how-it-works-sprite.png");
+		background-position: 0 0;
+		margin-right: 13px;
+		display:inline-block;
+		}
+ 		.periodic-table .row:last-child .sub-row .element {
+		background-position-y: 219px;
+ 		}
+ 		.periodic-table .row .sub-row .periodic-ala, .periodic-table .row .sub-row .periodic-nac {
+		background-position-x: 944px;
+		}
+ 		.periodic-table .row .sub-row .periodic-b1, .periodic-table .row .sub-row .periodic-milk {
+		background-position-x: 863px;
+		}
+ 		.periodic-table .row .sub-row .periodic-b2, .periodic-table .row .sub-row .periodic-mg {
+		background-position-x: 784px;
+		}
+ 		.periodic-table .row .sub-row .periodic-b3, .periodic-table .row .sub-row .periodic-mn {
+		background-position-x: 705px;
+		}
+ 		.periodic-table .row .sub-row .periodic-b5, .periodic-table .row .sub-row .periodic-mo {
+		background-position-x: 627px;
+		}
+ 		.periodic-table .row .sub-row .periodic-b6, .periodic-table .row .sub-row .periodic-se {
+		background-position-x: 547px;
+		}
+ 		.periodic-table .row .sub-row .periodic-b12, .periodic-table .row .sub-row .periodic-tau {
+		background-position-x: 467px;
+		}
+ 		.periodic-table .row .sub-row .periodic-bfn, .periodic-table .row .sub-row .periodic-turmeric {
+		background-position-x: 388px;
+		}
+ 		.periodic-table .row .sub-row .periodic-c, .periodic-table .row .sub-row .periodic-zn {
+		background-position-x: 308px;
+		}
+ 		.periodic-table .row .sub-row .periodic-cr, .periodic-table .row .sub-row .periodic-affordable {
+		background-position-x: 229px;
+		}
+ 		.periodic-table .row .sub-row .periodic-e, .periodic-table .row .sub-row .periodic-convenient {
+		background-position-x: 149px;
+		}
+ 		.periodic-table .row .sub-row .periodic-fte {
+		background-position-x: 70px;
+		}
+ 		.periodic-table .row .sub-row .periodic-grape {
+		background-position-x: 1024px;
+		}
  		@media (min-width: 768px) {
  		.navbar-nav > li > a {
  		padding: 5px 15px;
@@ -158,6 +219,50 @@
 			<div class="content-text">
 			We spent four years developing the formula behind Previve to empower people to drink without repercussions. We invite you to see how it delivers each of its benefits, and understand which ingredients are hard at work to help protect you from the unwanted side effects of alcohol.
 			</div>			
+		</div>
+
+		<div class="periodic-table">
+			<div class="row">
+				<div class="sub-row">
+					<div class="element periodic-blank"></div>			
+					<div class="element periodic-ala"></div>
+					<div class="element periodic-b1"></div>
+					<div class="element periodic-b2"></div>
+					<div class="element periodic-b3"></div>
+				</div>
+				<div class="sub-row">
+					<div class="element periodic-b5"></div>
+					<div class="element periodic-b6"></div>
+					<div class="element periodic-b12"></div>
+					<div class="element periodic-bfn"></div>
+				</div>
+				<div class="sub-row">
+					<div class="element periodic-c"></div>
+					<div class="element periodic-cr"></div>
+					<div class="element periodic-e"></div>
+					<div class="element periodic-fte"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sub-row">
+					<div class="element periodic-grape"></div>
+					<div class="element periodic-nac"></div>
+					<div class="element periodic-milk"></div>
+					<div class="element periodic-mg"></div>
+				</div>
+				<div class="sub-row">
+					<div class="element periodic-mn"></div>
+					<div class="element periodic-mo"></div>
+					<div class="element periodic-se"></div>
+					<div class="element periodic-tau"></div>
+				</div>
+				<div class="sub-row">
+					<div class="element periodic-tumeric"></div>
+					<div class="element periodic-zn"></div>
+					<div class="element periodic-affortable"></div>
+					<div class="element periodic-convenient"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 
