@@ -109,14 +109,14 @@
       </div>
       <div class="wrapper wrapper-navbar-hp">
          <div class="container">
-            <ul class="row nav navbar-nav">
-               <li class="navbar-previve col-sm-2"><a href="#">Shop Online</a></li>
-               <li class="navbar-previve col-sm-2"><a href="#">The Previve Story</a></li>
-               <li class="navbar-previve col-sm-2"><a href="how-it-works.html">How It Works</a></li>
-               <li class="navbar-previve col-sm-2"><a href="#">Why Four Pills?</a></li>
-               <li class="navbar-previve col-sm-2"><a href="#">FAQ</a></li>
-               <li class="navbar-previve col-sm-2"><a href="#">Press</a></li>
-            </ul>
+            <div class="row">
+               <div class="navbar-hp col-sm-2"><a href="#">Shop Online</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">The Previve Story</a></div>
+               <div class="navbar-hp col-sm-2"><a href="how-it-works.html">How It Works</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">Why Four Pills?</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">FAQ</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">Press</a></div>
+            </div>
          </div>
          <!-- /container -->
       </div>
