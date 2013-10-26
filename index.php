@@ -88,7 +88,8 @@
          display: block;
          float: none;
          max-width: 50%;
-         margin: 0 auto 20px;
+         margin: 0 auto;
+         padding:0;
          }
          }
          @media (max-width: 767px) {
@@ -100,7 +101,6 @@
          }
          .featurette-image {
          max-width:90%;
-         float:none;
          }
          }
       </style>
