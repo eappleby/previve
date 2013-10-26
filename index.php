@@ -35,23 +35,15 @@
          text-align:left;
          }
          .featurette-image {
-         margin-right: 40px;
-         padding-right:50px;
-         float:left;
-         }
+         text-align:right;
+     	 }
          .featurette-image img {
          height: auto;
          max-width: 100%;
          vertical-align: middle;
          border: 0;	
          }
-         .featurette-heading {
-         font-size: 50px;
-         font-weight: 300;
-         line-height: 1;
-         letter-spacing: -1px;
-         }
-         .wrapper {
+        .wrapper {
          background:#ffffff;
          }
          .wrapper-navbar-hp {
@@ -73,6 +65,8 @@
          }
          .featurette-image {
          max-width:90%;
+         padding-right: 0;
+         text-align:center;
          }
          }
       </style>
