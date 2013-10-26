@@ -116,7 +116,7 @@
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
          <div class="row featurette">
-            <img class="featurette-image pull-left" src="assets/img/previve-packaging-1-box.png">
+            <img class="featurette-image" src="assets/img/previve-packaging-1-box.png">
             <div class="featurette-messaging">
 	            <p><strong>ENERGIZES</strong> your night</p>
 	            <p><strong>PREVENTS</strong> hangover symptons</p>
@@ -127,12 +127,12 @@
       <div class="wrapper wrapper-navbar-hp">
          <div class="container">
             <div class="row">
-               <div class="navbar-hp col-md-2"><a href="#">Shop Online</a></div>
-               <div class="navbar-hp col-md-2"><a href="#">The Previve Story</a></div>
-               <div class="navbar-hp col-md-2"><a href="#">How It Works</a></div>
-               <div class="navbar-hp col-md-2"><a href="#">Why Four Pills?</a></div>
-               <div class="navbar-hp col-md-2"><a href="#">FAQ</a></div>
-               <div class="navbar-hp col-md-2"><a href="#">Press</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">Shop Online</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">The Previve Story</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">How It Works</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">Why Four Pills?</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">FAQ</a></div>
+               <div class="navbar-hp col-sm-2"><a href="#">Press</a></div>
             </div>
          </div>
          <!-- /container -->
