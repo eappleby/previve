@@ -106,7 +106,7 @@
          </div>
          <div class="row featurette">
          	<div class="col-md-6">
-	            <img class="featurette-image pull-left" src="assets/img/previve-packaging-1-box.jpg">
+	            <img class="featurette-image pull-right" src="assets/img/previve-packaging-1-box.png">
 	        </div>
 	        <div class="col-md-6">
 	            <p><strong>ENERGIZES</strong> your night</p>
