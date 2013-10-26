@@ -45,7 +45,6 @@
          margin-right: 40px;
          }
          .featurette-image {
-         margin-top: -120px;
          padding-left:50px;
          }
          .featurette-heading {
