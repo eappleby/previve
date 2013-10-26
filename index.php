@@ -41,11 +41,10 @@
          .featurette-messaging {
          padding-top:120px;
          }
-         .featurette-image.pull-left {
-         margin-right: 40px;
-         }
          .featurette-image {
+         margin-right: 40px;
          padding-left:50px;
+         float:left;
          }
          .featurette-heading {
          font-size: 50px;
@@ -96,7 +95,10 @@
          font-size: 30px;
          }
          .featurette-messaging {
-         padding-top:40px;
+         padding-top:0;
+         }
+         .featurette-image {
+         float:none;
          }
          }
       </style>
