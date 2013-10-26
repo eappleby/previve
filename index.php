@@ -36,6 +36,7 @@
          }
          .featurette-image {
          text-align:right;
+         padding-right: 80px;
      	 }
          .featurette-image img {
          height: auto;
@@ -59,6 +60,13 @@
          .navbar-hp {
          text-align:center;
          }
+
+         @media (max-width: 991px) {
+         .featurette-messaging {
+         padding-top: 40px;
+		 }
+		 }
+
          @media (max-width: 767px) {
          .featurette-messaging {
          display:none;
