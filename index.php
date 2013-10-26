@@ -67,29 +67,7 @@
          .navbar-hp {
          text-align:center;
          }
-
-         @media (max-width: 1199px) {
-         .featurette {
-         padding-left: 0;
-		 }
-		 }
-
-         @media (max-width: 980px) {
-         .featurette {
-         height: auto;
-         }
-         .featurette-image {
-         display: block;
-         float: none;
-         max-width: 50%;
-         margin: 0 auto;
-         padding:0;
-         }
-         }
          @media (max-width: 767px) {
-         .featurette-heading {
-         font-size: 30px;
-         }
          .featurette-messaging {
          display:none;
          }
@@ -111,8 +89,10 @@
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
          <div class="row featurette">
-            <img class="featurette-image" src="assets/img/previve-packaging-1-box.png">
-            <div class="featurette-messaging">
+         	<div class="col-sm-6 featurette-image">
+	            <img src="assets/img/previve-packaging-1-box.png">
+	        </div>
+            <div class="col-sm-6 featurette-messaging">
 	            <p><strong>ENERGIZES</strong> your night</p>
 	            <p><strong>PREVENTS</strong> hangover symptons</p>
 	            <p><strong>PROMOTES</strong> long-term wellness</p>
