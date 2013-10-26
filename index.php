@@ -32,9 +32,10 @@
          }
          .featurette-messaging {
          padding-top:120px;
+         text-align:left;
          }
          .featurette-image {
-         margin-right: 40px;
+         margin-right: 80px;
          padding-right:50px;
          float:left;
          }
