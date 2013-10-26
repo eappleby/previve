@@ -26,7 +26,6 @@
          background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 30%);      
          }
          .featurette {
-         padding-top: 120px;
          overflow:hidden;
          padding-bottom:80px;
          }
@@ -39,22 +38,8 @@
          vertical-align: middle;
          border: 0;	
          }
-         @media (max-width: 980px) {
-         .featurette-image.pull-left, .featurette-image.pull-right {
-         display: block;
-         float: none;
-         max-width: 50%;
-         margin: 0 auto 20px;
-         }
-         .featurette {
-         height: auto;
-         padding: 0;
-         }
-         }
-         @media (max-width: 767px) {
-         .featurette-heading {
-         font-size: 30px;
-         }
+         .featurette-messaging {
+         padding-top:120px;
          }
          .featurette-image.pull-left {
          margin-right: 40px;
@@ -92,6 +77,29 @@
          .navbar-hp {
          text-align:center;
          }
+         @media (max-width: 980px) {
+         .featurette-image.pull-left, .featurette-image.pull-right {
+         display: block;
+         float: none;
+         max-width: 50%;
+         margin: 0 auto 20px;
+         }
+         .featurette-messaging {
+         padding-top:80px;
+         }
+         .featurette {
+         height: auto;
+         padding: 0;
+         }
+         }
+         @media (max-width: 767px) {
+         .featurette-heading {
+         font-size: 30px;
+         }
+         .featurette-messaging {
+         padding-top:40px;
+         }
+         }
       </style>
       <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
       <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -107,9 +115,11 @@
          </div>
          <div class="row featurette">
             <img class="featurette-image pull-left" src="assets/img/previve-packaging-1-box.png">
-            <p><strong>ENERGIZES</strong> your night</p>
-            <p><strong>PREVENTS</strong> hangover symptons</p>
-            <p><strong>PROMOTES</strong> long-term wellness</p>
+            <div class="featurette-messaging">
+	            <p><strong>ENERGIZES</strong> your night</p>
+	            <p><strong>PREVENTS</strong> hangover symptons</p>
+	            <p><strong>PROMOTES</strong> long-term wellness</p>
+	        </div>
          </div>
       </div>
       <div class="wrapper wrapper-navbar-hp">
