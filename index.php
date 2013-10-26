@@ -126,8 +126,8 @@
       </div>
       <div class="wrapper wrapper-disclaimer">
          <div class="container">
-            <p>
-               * Remember, this product does not prevent intoxication, alcohol poisoning, or alcohol abuse. Please drink responsibly. Never drink and drive! Do not consume alcohol if you are not of the legal age to do so, while pregnant or 
+            <p class="disclaimer">
+               Remember, this product does not prevent intoxication, alcohol poisoning, or alcohol abuse. Please drink responsibly. Never drink and drive! Do not consume alcohol if you are not of the legal age to do so, while pregnant or 
                nursing. These statements have not been evaluated by the Food and Drug Administration and Previve is not intended to diagnose, mitigate, treat, cure, or prevent any disease. Practice safe drinking!
             </p>
          </div>
