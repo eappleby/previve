@@ -28,14 +28,14 @@
          .featurette {
          overflow:hidden;
          padding-bottom:80px;
+         padding-left: 115px;
          }
          .featurette-messaging {
          padding-top:120px;
          }
          .featurette-image {
          margin-right: 40px;
-         padding-right:50px;	
-         padding-left:50px;
+         padding-right:50px;
          float:left;
          }
          .featurette-image img {
@@ -82,6 +82,7 @@
          }
          .featurette {
          height: auto;
+         padding-left: 0;
          }
          }
          @media (max-width: 767px) {
