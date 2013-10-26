@@ -95,8 +95,7 @@
          font-size: 30px;
          }
          .featurette-messaging {
-         padding-top:0;
-         text-align:center;
+         display:none;
          }
          .featurette-image {
          max-width:90%;
