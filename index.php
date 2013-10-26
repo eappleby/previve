@@ -29,22 +29,20 @@
          overflow:hidden;
          padding-bottom:80px;
          }
+         .featurette-messaging {
+         padding-top:120px;
+         }
          .featurette-image {
+         margin-right: 40px;
          padding-right:50px;	
+         padding-left:50px;
+         float:left;
          }
          .featurette-image img {
          height: auto;
          max-width: 100%;
          vertical-align: middle;
          border: 0;	
-         }
-         .featurette-messaging {
-         padding-top:120px;
-         }
-         .featurette-image {
-         margin-right: 40px;
-         padding-left:50px;
-         float:left;
          }
          .featurette-heading {
          font-size: 50px;
@@ -82,12 +80,8 @@
          max-width: 50%;
          margin: 0 auto 20px;
          }
-         .featurette-messaging {
-         padding-top:80px;
-         }
          .featurette {
          height: auto;
-         padding: 0;
          }
          }
          @media (max-width: 767px) {
