@@ -13,17 +13,17 @@
          padding-top: 20px;
          padding-bottom: 40px;
          /* IE10 Consumer Preview */ 
-         background-image: -ms-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+         background-image: -ms-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
          /* Mozilla Firefox */ 
-         background-image: -moz-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+         background-image: -moz-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
          /* Opera */ 
-         background-image: -o-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+         background-image: -o-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
          /* Webkit (Safari/Chrome 10) */ 
-         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDFFFF), color-stop(.5, #FFFFFF));
+         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDFFFF), color-stop(.3, #FFFFFF));
          /* Webkit (Chrome 11+) */ 
-         background-image: -webkit-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 50%);
+         background-image: -webkit-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
          /* W3C Markup, IE10 Release Preview */ 
-         background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 50%);      
+         background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 30%);      
          }
          .featurette {
          padding-top: 120px;
@@ -104,16 +104,20 @@
             <h3 class="logo">Previve</h3>
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
-         <div class="featurette">
-            <img class="featurette-image pull-left" src="assets/img/previve-packaging-1-box.jpg">
-            <p><strong>ENERGIZES</strong> your night</p>
-            <p><strong>PREVENTS</strong> hangover symptons</p>
-            <p><strong>PROMOTES</strong> long-term wellness</p>
+         <div class="row featurette">
+         	<div class="col-md-6">
+	            <img class="featurette-image pull-left" src="assets/img/previve-packaging-1-box.jpg">
+	        </div>
+	        <div class="col-md-6">
+	            <p><strong>ENERGIZES</strong> your night</p>
+	            <p><strong>PREVENTS</strong> hangover symptons</p>
+	            <p><strong>PROMOTES</strong> long-term wellness</p>
+	        </div>
          </div>
       </div>
       <div class="wrapper wrapper-navbar-hp">
          <div class="container">
-            <div class="row nav-pills">
+            <div class="row">
                <div class="navbar-hp col-md-2"><a href="#">Shop Online</a></div>
                <div class="navbar-hp col-md-2"><a href="#">The Previve Story</a></div>
                <div class="navbar-hp col-md-2"><a href="#">How It Works</a></div>
