@@ -35,7 +35,7 @@
          text-align:left;
          }
          .featurette-image {
-         margin-right: 80px;
+         margin-right: 40px;
          padding-right:50px;
          float:left;
          }
@@ -63,13 +63,6 @@
          .masthead {
          text-align:center;
          padding-bottom:50px;
-         }
-         /* Supporting marketing content */
-         .marketing {
-         margin: 60px 0;
-         }
-         .marketing p + h4 {
-         margin-top: 28px;
          }
          .navbar-hp {
          text-align:center;
