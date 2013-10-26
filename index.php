@@ -59,11 +59,9 @@
          .featurette-image.pull-left {
          margin-right: 40px;
          }
-         .featurette-image-wrapper {
-         text-align:right;
-         }
          .featurette-image {
          margin-top: -120px;
+         padding-left:50px;
          }
          .featurette-heading {
          font-size: 50px;
@@ -108,14 +106,10 @@
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
          <div class="row featurette">
-         	<div class="col-md-6 featurette-image-wrapper">
-	            <img class="featurette-image" src="assets/img/previve-packaging-1-box.png">
-	        </div>
-	        <div class="col-md-6">
-	            <p><strong>ENERGIZES</strong> your night</p>
-	            <p><strong>PREVENTS</strong> hangover symptons</p>
-	            <p><strong>PROMOTES</strong> long-term wellness</p>
-	        </div>
+            <img class="featurette-image pull-left" src="assets/img/previve-packaging-1-box.png">
+            <p><strong>ENERGIZES</strong> your night</p>
+            <p><strong>PREVENTS</strong> hangover symptons</p>
+            <p><strong>PROMOTES</strong> long-term wellness</p>
          </div>
       </div>
       <div class="wrapper wrapper-navbar-hp">
