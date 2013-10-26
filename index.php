@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>Previve</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -98,6 +98,9 @@ letter-spacing: -1px;
       .marketing p + h4 {
         margin-top: 28px;
       }
+      .navbar-hp {
+      	text-align:center;
+      }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -129,9 +132,14 @@ letter-spacing: -1px;
 
     <div class="container-narrow">
 
-      <div class="footer">
-        <p>&copy; Company 2013</p>
-      </div>
+<div class="row nav-pills">
+  <div class="navbar-hp col-md-2"><a href="#">Shop Online</a></div>
+  <div class="navbar-hp col-md-2"><a href="#">The Previve Story</a></div>
+  <div class="navbar-hp col-md-2"><a href="#">How It Works</a></div>
+  <div class="navbar-hp col-md-2"><a href="#">Why Four Pills?</a></div>
+  <div class="navbar-hp col-md-2"><a href="#">FAQ</a></div>
+  <div class="navbar-hp col-md-2"><a href="#">Press</a></div>
+</div>
 
     </div> <!-- /container -->
 
