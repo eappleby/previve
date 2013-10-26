@@ -62,12 +62,18 @@
          }
 
          @media (max-width: 991px) {
+         .featurette {
+         padding-left: 40px;
+		 }
          .featurette-messaging {
          padding-top: 40px;
 		 }
 		 }
 
          @media (max-width: 767px) {
+         .featurette {
+         padding-left: 0px;
+		 }
          .featurette-messaging {
          display:none;
          }
