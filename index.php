@@ -99,6 +99,7 @@
          text-align:center;
          }
          .featurette-image {
+         max-width:90%;
          float:none;
          }
          }
