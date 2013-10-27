@@ -105,7 +105,7 @@
  		padding-bottom:30px;
  		}
  		#short-answer .short-title {
-		padding: 20px 0 50px;
+		padding: 20px 0;
 		font-size: 18px;
 		display:inline-block;
 		width: 300px;
@@ -163,7 +163,7 @@
 		border:2px dotted #000080;
 		padding:20px 20px 0;
 		width:400px;
-		margin-right:20px;
+		margin:0 20px 20px 0;
 		display:inline-block;
 		vertical-align: top;
 		}
@@ -324,6 +324,19 @@
 		}
 		.navbar-nav li a {
  		border-right:0;
+ 		}
+		#short-answer .short-content .short-image {
+		width:90px !important;
+		margin-right:30px;
+		}
+		#long-answer .long-criteria, #long-answer .long-explanation {
+		width:100%;
+		}
+ 		}
+ 		@media (max-width: 599px) {
+ 		#short-answer .short-content .short-explanation {
+ 		width:230px !important;
+ 		margin-right:30px !important;
  		}
  		}
  	</style>
