@@ -9,7 +9,68 @@
       <!-- Le styles -->
       <link href="assets/css/bootstrap.css" rel="stylesheet">
       <style type="text/css">
+		@font-face
+		{
+		font-family: gothamBlack;
+		src: url(assets/fonts/gotham-black.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBlackItalic;
+		src: url(assets/fonts/gotham-blackitalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBold;
+		src: url(assets/fonts/gotham-bold.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBoldItalic;
+		src: url(assets/fonts/gotham-bolditalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBook;
+		src: url(assets/fonts/gotham-book.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBookItalic;
+		src: url(assets/fonts/gotham-bookitalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamExtraLight;
+		src: url(assets/fonts/gotham-extralight.otf);
+		}
+		@font-face
+		{
+		font-family: gothamExtraLightItalic;
+		src: url(assets/fonts/gotham-extralightitalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamLight;
+		src: url(assets/fonts/gotham-light.otf);
+		}
+		@font-face
+		{
+		font-family: gothamLightItalic;
+		src: url(assets/fonts/gotham-lightitalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamMedium;
+		src: url(assets/fonts/gotham-medium.otf);
+		}
+		@font-face
+		{
+		font-family: gothamMediumItalic;
+		src: url(assets/fonts/gotham-mediumitalic.otf);
+		}
          body {
+        font-family:gothamLight;
          padding-top: 20px;
          padding-bottom: 40px;
          /* IE10 Consumer Preview */ 
@@ -25,6 +86,21 @@
          /* W3C Markup, IE10 Release Preview */ 
          background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 30%);      
          }
+ 		h3.logo{
+ 		text-transform: uppercase;
+ 		font-family:gothamLight;
+ 		font-size:32px;
+ 		color: #000080;
+ 		}
+ 		h3.logo span{
+ 		color: #66CCCC;
+ 		}
+ 		h4.tagline{
+ 		font-family:times;
+ 		font-style:italic;
+ 		font-size:18px;
+ 		color: #000080;
+ 		}
          .featurette {
          overflow:hidden;
          padding-bottom:80px;
@@ -93,7 +169,7 @@
    <body>
       <div class="container">
          <div class="masthead">
-            <h3 class="logo">Previve</h3>
+            <h3 class="logo"><span>pre</span>vive</h3>
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
          <div class="row featurette">
