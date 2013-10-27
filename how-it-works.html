@@ -41,6 +41,10 @@
  		text-align: center;
 		padding: 20px 0 50px;
 		font-size: 26px;
+		color: #66CCCC;
+ 		}
+ 		.title span{
+		color: #000080;
  		}
  		ul.row-how-it-works {
  		list-style:none;
@@ -54,6 +58,8 @@
 		border-bottom: 1px solid #000;
 		text-align: center;
 		position: relative;
+		cursor:pointer;
+ 		color: #000080;
 		}
 		ul.row-how-it-works li.navbar-how-it-works:after {
 		content: "";
@@ -70,10 +76,20 @@
  		ul.row-how-it-works li.navbar-how-it-works:last-child{
  		margin-right:0;
  		}
+ 		ul.row-how-it-works li.active{
+ 		color: #66CCCC;
+ 		}
+ 		ul.row-how-it-works li.active:after{
+		background-image: -webkit-gradient(radial, 50% 0, 50% 0, from(#66CCCC), to(transparent));
+		background-image: -webkit-radial-gradient(center, #66CCCC, transparent);
+		background-image: -moz-radial-gradient(center, #66CCCC, transparent);
+		background-image: -o-radial-gradient(center, #66CCCC, transparent);
+ 		}
  		.content {
- 		width: 570px;
- 		margin: 80px auto 120px;
- 		line-height:25px;
+		width: 710px;
+		height: 240px;
+		margin: 80px auto 0;
+		line-height: 25px;
  		}
  		.content .content-anchor {
  		color: #66CCCC;
@@ -107,49 +123,49 @@
 		height:70px;
 		background-image:url("assets/img/how-it-works-sprite.png");
 		background-position: 0 0;
-		margin-right: 13px;
+		margin-right: 12px;
 		display:inline-block;
 		}
  		.periodic-table .row:last-child .sub-row .element {
 		background-position-y: 219px;
  		}
- 		.periodic-table .row .sub-row .periodic-ala, .periodic-table .row .sub-row .periodic-nac {
+ 		#periodic-ala, #periodic-nac {
 		background-position-x: 944px;
 		}
- 		.periodic-table .row .sub-row .periodic-b1, .periodic-table .row .sub-row .periodic-milk {
-		background-position-x: 863px;
+ 		#periodic-b1, #periodic-milk {
+		background-position-x: 865px;
 		}
- 		.periodic-table .row .sub-row .periodic-b2, .periodic-table .row .sub-row .periodic-mg {
-		background-position-x: 784px;
+ 		#periodic-b2, #periodic-mg {
+		background-position-x: 785px;
 		}
- 		.periodic-table .row .sub-row .periodic-b3, .periodic-table .row .sub-row .periodic-mn {
+ 		#periodic-b3, #periodic-mn {
 		background-position-x: 705px;
 		}
- 		.periodic-table .row .sub-row .periodic-b5, .periodic-table .row .sub-row .periodic-mo {
+ 		#periodic-b5, #periodic-mo {
 		background-position-x: 627px;
 		}
- 		.periodic-table .row .sub-row .periodic-b6, .periodic-table .row .sub-row .periodic-se {
+ 		#periodic-b6, #periodic-se {
 		background-position-x: 547px;
 		}
- 		.periodic-table .row .sub-row .periodic-b12, .periodic-table .row .sub-row .periodic-tau {
+ 		#periodic-b12, #periodic-tau {
 		background-position-x: 467px;
 		}
- 		.periodic-table .row .sub-row .periodic-bfn, .periodic-table .row .sub-row .periodic-turmeric {
+ 		#periodic-bfn, #periodic-turmeric {
 		background-position-x: 388px;
 		}
- 		.periodic-table .row .sub-row .periodic-c, .periodic-table .row .sub-row .periodic-zn {
+ 		#periodic-c, #periodic-zn {
 		background-position-x: 308px;
 		}
- 		.periodic-table .row .sub-row .periodic-cr, .periodic-table .row .sub-row .periodic-affordable {
+ 		#periodic-cr, #periodic-affordable {
 		background-position-x: 229px;
 		}
- 		.periodic-table .row .sub-row .periodic-e, .periodic-table .row .sub-row .periodic-convenient {
+ 		#periodic-e, #periodic-convenient {
 		background-position-x: 149px;
 		}
- 		.periodic-table .row .sub-row .periodic-fte {
+ 		#periodic-fte {
 		background-position-x: 70px;
 		}
- 		.periodic-table .row .sub-row .periodic-grape {
+ 		#periodic-grape {
 		background-position-x: 1024px;
 		}
  		@media (min-width: 768px) {
@@ -202,11 +218,11 @@
 		</div>
 
 		<ul class="row row-how-it-works">
-			<li class="navbar-how-it-works col-sm-1"><a id="how-energizes" href="#">Energizes</a></li>
-			<li class="navbar-how-it-works col-sm-1"><a id="how-prevents" href="#">Prevents</a></li>
-			<li class="navbar-how-it-works col-sm-1"><a id="how-promotes" href="#">Promotes</a></li>
-			<li class="navbar-how-it-works col-sm-1"><a id="how-convenient" href="#">Convenient</a></li>
-			<li class="navbar-how-it-works col-sm-1"><a id="how-affordable" href="#">Affordable</a></li>
+			<li class="navbar-how-it-works col-sm-1"><div id="how-energizes" href="#">Energizes</div></li>
+			<li class="navbar-how-it-works col-sm-1"><div id="how-prevents" href="#">Prevents</div></li>
+			<li class="navbar-how-it-works col-sm-1"><div id="how-promotes" href="#">Promotes</div></li>
+			<li class="navbar-how-it-works col-sm-1"><div id="how-convenient" href="#">Convenient</div></li>
+			<li class="navbar-how-it-works col-sm-1"><div id="how-affordable" href="#">Affordable</div></li>
 		</ul>
 
 		<div class="content">
@@ -224,43 +240,43 @@
 		<div class="periodic-table">
 			<div class="row">
 				<div class="sub-row">
-					<div class="element periodic-blank"></div>			
-					<div class="element periodic-ala"></div>
-					<div class="element periodic-b1"></div>
-					<div class="element periodic-b2"></div>
-					<div class="element periodic-b3"></div>
+					<div class="element"></div>			
+					<div class="element" id="periodic-ala"></div>
+					<div class="element" id="periodic-b1"></div>
+					<div class="element" id="periodic-b2"></div>
+					<div class="element" id="periodic-b3"></div>
 				</div>
 				<div class="sub-row">
-					<div class="element periodic-b5"></div>
-					<div class="element periodic-b6"></div>
-					<div class="element periodic-b12"></div>
-					<div class="element periodic-bfn"></div>
+					<div class="element" id="periodic-b5"></div>
+					<div class="element" id="periodic-b6"></div>
+					<div class="element" id="periodic-b12"></div>
+					<div class="element" id="periodic-bfn"></div>
 				</div>
 				<div class="sub-row">
-					<div class="element periodic-c"></div>
-					<div class="element periodic-cr"></div>
-					<div class="element periodic-e"></div>
-					<div class="element periodic-fte"></div>
+					<div class="element" id="periodic-c"></div>
+					<div class="element" id="periodic-cr"></div>
+					<div class="element" id="periodic-e"></div>
+					<div class="element" id="periodic-fte"></div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="sub-row">
-					<div class="element periodic-grape"></div>
-					<div class="element periodic-nac"></div>
-					<div class="element periodic-milk"></div>
-					<div class="element periodic-mg"></div>
+					<div class="element" id="periodic-grape"></div>
+					<div class="element" id="periodic-nac"></div>
+					<div class="element" id="periodic-milk"></div>
+					<div class="element" id="periodic-mg"></div>
 				</div>
 				<div class="sub-row">
-					<div class="element periodic-mn"></div>
-					<div class="element periodic-mo"></div>
-					<div class="element periodic-se"></div>
-					<div class="element periodic-tau"></div>
+					<div class="element" id="periodic-mn"></div>
+					<div class="element" id="periodic-mo"></div>
+					<div class="element" id="periodic-se"></div>
+					<div class="element" id="periodic-tau"></div>
 				</div>
 				<div class="sub-row">
-					<div class="element periodic-tumeric"></div>
-					<div class="element periodic-zn"></div>
-					<div class="element periodic-affortable"></div>
-					<div class="element periodic-convenient"></div>
+					<div class="element" id="periodic-tumeric"></div>
+					<div class="element" id="periodic-zn"></div>
+					<div class="element" id="periodic-affordable"></div>
+					<div class="element" id="periodic-convenient"></div>
 				</div>
 			</div>
 		</div>
@@ -272,5 +288,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/previve.js"></script>
   </body>
 </html>
