@@ -206,11 +206,11 @@
          <div class="container">
             <div class="row">
                <div class="navbar-hp col-sm-2"><a href="#">Shop Online</a></div>
-               <div class="navbar-hp col-sm-2"><a href="#">The Previve Story</a></div>
+               <div class="navbar-hp col-sm-2"><a href="previve-story.html">The Previve Story</a></div>
                <div class="navbar-hp col-sm-2"><a href="how-it-works.html">How It Works</a></div>
-               <div class="navbar-hp col-sm-2"><a href="#">Why Four Pills?</a></div>
-               <div class="navbar-hp col-sm-2"><a href="#">FAQ</a></div>
-               <div class="navbar-hp col-sm-2"><a href="#">Press</a></div>
+               <div class="navbar-hp col-sm-2"><a href="why-four-pills.html">Why Four Pills?</a></div>
+               <div class="navbar-hp col-sm-2"><a href="faq.html">FAQ</a></div>
+               <div class="navbar-hp col-sm-2"><a href="press.html">Press</a></div>
             </div>
          </div>
       </div>
