@@ -74,7 +74,10 @@
 		}
         body {
         font-family:gothamLight;
+ 		color:#000080;
+ 		font-size:16px;
  		padding-top: 30px;
+
 		/* IE10 Consumer Preview */ 
 		background-image: -ms-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
 		/* Mozilla Firefox */ 
@@ -88,6 +91,118 @@
 		/* W3C Markup, IE10 Release Preview */ 
 		background-image: linear-gradient(to top, #66CCCC 0%, #FFFFFF 20%);      
  		}
+ 		.container-narrow{
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 0 15px;
+ 		}
+ 		.intro {
+ 		font-family:times;
+ 		font-style:italic;
+ 		padding-bottom:30px;
+ 		}
+ 		#short-answer {
+ 		padding-bottom:30px;
+ 		}
+ 		#short-answer .short-title {
+		padding: 20px 0 50px;
+		font-size: 18px;
+		display:inline-block;
+		width: 300px;
+		vertical-align: top;
+		text-transform: uppercase;
+ 		}
+ 		#short-answer .short-title span{
+		color: #66CCCC;
+		}
+		#short-answer .short-content {
+		display:inline-block;
+		width:565px;
+		margin-top:20px;
+		}
+		#short-answer .short-content .short-list-item {
+		margin-bottom:40px;
+		}
+		#short-answer .short-content .short-list-item .short-image{
+		display:inline-block;
+		width:100px;
+		text-align:right;
+		margin-right:40px;
+		vertical-align: top;
+		}
+		#short-answer .short-content .short-list-item .short-explanation{
+		display:inline-block;
+		text-transform: uppercase;
+		width: 420px;
+		font-size: 12px;
+		font-weight: bold;
+		}
+		#short-answer .short-content .short-list-item .short-explanation span{
+		display:block;
+		color: #66CCCC;
+		font-weight:bold;
+		font-size: 20px;
+		}
+ 		#long-answer {
+ 		padding-bottom:30px;
+ 		}
+ 		#long-answer .long-title {
+		padding: 20px 0;
+		font-size: 18px;
+		text-transform: uppercase;
+ 		}
+ 		#long-answer .long-title span{
+		color: #66CCCC;
+		}
+		#long-answer .long-intro {
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom:20px;
+		}
+		#long-answer .long-criteria {
+		border:2px dotted #000080;
+		padding:20px 20px 0;
+		width:400px;
+		margin-right:20px;
+		display:inline-block;
+		vertical-align: top;
+		}
+		#long-answer .long-criteria .long-criteria-intro {
+		padding-bottom:15px;
+		}
+		#long-answer .long-criteria .long-criteria-intro span {
+		color: #66CCCC;
+		}
+		#long-answer .long-criteria .long-criteria-intro strong {
+		font-weight:normal;
+		font-style:italic;
+		font-family:times;
+		}
+		#long-answer .long-criteria .long-criteria-list .long-criteria-item {
+		padding-bottom:25px;
+		}
+		#long-answer .long-criteria .long-criteria-list .long-criteria-item .long-item-image {
+		display: inline-block;
+		margin-right: 5px;
+		}
+		#long-answer .long-criteria .long-criteria-list .long-criteria-item .long-item-content {
+		display: inline-block;
+		}
+		#long-answer .long-explanation {
+		display: inline-block;
+		width: 445px;
+		font-size: 14px;
+		font-weight: bold;
+		}
+		.final-thoughts {
+		text-transform: uppercase;
+		font-size:18px;
+		padding-bottom:200px;
+		}
+		.final-thoughts span {
+		color: #66CCCC;
+		}
+
  		.navbar-default {
 		background-color: inherit;
 		border-color: #fff;
@@ -163,45 +278,6 @@
  		.title span{
 		color: #000080;
  		}
- 		ul.row-how-it-works {
- 		list-style:none;
- 		margin: 0;
-		padding: 0;
-		text-transform: uppercase;
- 		}
- 		ul.row-how-it-works li.navbar-how-it-works{
-		width: 10%;
-		margin-right: 12.5%;
-		padding: 0 0 10px;
-		text-align: center;
-		position: relative;
-		cursor:pointer;
- 		color: #000080;
-		}
-		ul.row-how-it-works li.navbar-how-it-works:after {
-		content: "";
-		position: absolute;
-		bottom: -3px;
-		left: -3px;
-		right: -3px;
-		height: 3px;
-		background-image: -webkit-gradient(radial, 50% 0, 50% 0, from(#000080), to(transparent));
-		background-image: -webkit-radial-gradient(center, #000080, transparent);
-		background-image: -moz-radial-gradient(center, #000080, transparent);
-		background-image: -o-radial-gradient(center, #000080, transparent);
-		}
- 		ul.row-how-it-works li.navbar-how-it-works:last-child{
- 		margin-right:0;
- 		}
- 		ul.row-how-it-works li.active{
- 		color: #66CCCC;
- 		}
- 		ul.row-how-it-works li.active:after{
-		background-image: -webkit-gradient(radial, 50% 0, 50% 0, from(#66CCCC), to(transparent));
-		background-image: -webkit-radial-gradient(center, #66CCCC, transparent);
-		background-image: -moz-radial-gradient(center, #66CCCC, transparent);
-		background-image: -o-radial-gradient(center, #66CCCC, transparent);
- 		}
  		.content {
 		width: 710px;
 		height: 260px;
@@ -260,7 +336,6 @@
   </head>
 
   <body>
-
     <div class="container">
       <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -282,73 +357,99 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-narrow">
 		<div class="title">
 			<span>WHY</span> 4 PILLS?
 		</div>
-
-		<ul class="row row-how-it-works">
-			<li class="navbar-how-it-works col-sm-1"><div id="how-energizes" href="#">Energizes</div></li>
-			<li class="navbar-how-it-works col-sm-1"><div id="how-prevents" href="#">Prevents</div></li>
-			<li class="navbar-how-it-works col-sm-1"><div id="how-promotes" href="#">Promotes</div></li>
-			<li class="navbar-how-it-works col-sm-1"><div id="how-convenient" href="#">Convenient</div></li>
-			<li class="navbar-how-it-works col-sm-1"><div id="how-affordable" href="#">Affordable</div></li>
-		</ul>
-
-		<div class="content">
-			<div class="content-anchor">
-			DISCOVER
+		<div class="intro">
+			Four pills sounds like a lot of pills to take at once. Why not take less?
+		</div>
+		<div id="short-answer">
+			<div class="short-title">
+				THE <span>SHORT</span> ANSWER :
 			</div>
-			<div class="content-header">
-			THE SCIENCE BEHIND PREVIVE.
+			<div class="short-content">
+				<div class="short-list-item">
+					<div class="short-image">
+						<img src="assets/img/2-pills.png" alt="two pills">
+					</div>
+					<div class="short-explanation">
+						<span>1.</span>Less than four pills will not work. You will get a hangover.
+					</div>
+				</div>
+				<div class="short-list-item">
+					<div class="short-image">
+						<img src="assets/img/4-pills.png" alt="four pills">
+					</div>
+					<div class="short-explanation">
+						<span>2.</span>Four (or more) pills will consistently prevent a hangover.
+					</div>
+				</div>
 			</div>
-			<div class="content-text">
-			We spent four years developing the formula behind Previve to empower people to drink without repercussions. We invite you to see how it delivers each of its benefits, and understand which ingredients are hard at work to help protect you from the unwanted side effects of alcohol.
-			</div>			
 		</div>
 
-		<div class="periodic-table">
-			<div class="row">
-				<div class="sub-row">
-					<div class="element" id="periodic-blank"></div>			
-					<div class="element" id="periodic-ala"></div>
-					<div class="element" id="periodic-b1"></div>
-					<div class="element" id="periodic-b2"></div>
-					<div class="element" id="periodic-b3"></div>
+		<div id="long-answer">
+			<div class="long-title">
+				THE <span>LONG</span> ANSWER :
+			</div>
+			<div class="long-intro">
+				One of our five major development criteria was to require only one pill.
+			</div>
+			<div class="long-criteria">
+				<div class="long-criteria-intro">
+					<span>PRE</span>VIVE <strong>development criteria</strong>:
 				</div>
-				<div class="sub-row">
-					<div class="element" id="periodic-b5"></div>
-					<div class="element" id="periodic-b6"></div>
-					<div class="element" id="periodic-b12"></div>
-					<div class="element" id="periodic-bfn"></div>
-				</div>
-				<div class="sub-row">
-					<div class="element" id="periodic-c"></div>
-					<div class="element" id="periodic-cr"></div>
-					<div class="element" id="periodic-e"></div>
-					<div class="element" id="periodic-fte"></div>
+				<div class="long-criteria-list">
+					<div class="long-criteria-item">
+						<div class="long-item-image">
+							<img src="assets/img/checkbox-checked.png" alt="checked checkbox">
+						</div>
+						<div class="long-item-content">
+							<span>1.</span>Prevent hangovers
+						</div>
+					</div>
+					<div class="long-criteria-item">
+						<div class="long-item-image">
+							<img src="assets/img/checkbox-checked.png" alt="checked checkbox">
+						</div>
+						<div class="long-item-content">
+							<span>2.</span>Taken only once
+						</div>
+					</div>
+					<div class="long-criteria-item">
+						<div class="long-item-image">
+							<img src="assets/img/checkbox-checked.png" alt="checked checkbox">
+						</div>
+						<div class="long-item-content">
+							<span>3.</span>Conveniently packaged
+						</div>
+					</div>
+					<div class="long-criteria-item">
+						<div class="long-item-image">
+							<img src="assets/img/checkbox-checked.png" alt="checked checkbox">
+						</div>
+						<div class="long-item-content">
+							<span>4.</span>Small enough to swallow
+						</div>
+					</div>
+					<div class="long-criteria-item">
+						<div class="long-item-image">
+							<img src="assets/img/checkbox-unchecked.png" alt="unchecked checkbox">
+						</div>
+						<div class="long-item-content">
+							<span>5.</span>One pill
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="sub-row">
-					<div class="element" id="periodic-grape"></div>
-					<div class="element" id="periodic-nac"></div>
-					<div class="element" id="periodic-milk"></div>
-					<div class="element" id="periodic-mg"></div>
-				</div>
-				<div class="sub-row">
-					<div class="element" id="periodic-mn"></div>
-					<div class="element" id="periodic-mo"></div>
-					<div class="element" id="periodic-se"></div>
-					<div class="element" id="periodic-tau"></div>
-				</div>
-				<div class="sub-row">
-					<div class="element" id="periodic-tumeric"></div>
-					<div class="element" id="periodic-zn"></div>
-					<div class="element" id="periodic-affordable"></div>
-					<div class="element" id="periodic-convenient"></div>
-				</div>
+			<div class="long-explanation">
+				<p>Our initial formula prevented a hangover but it required users to take eight pills to build up enough nutrients to be effective. We knew this was way too many pills to ask people to take. After considerable testing and refinement, we were able to condense our dosage to six pills and eventually to only four.</p>
+				<p>However, it was not possible to get reduce the number of pills further without severely compromising the effectiveness of the formula.</p>
+				<p>We now know that if you take less than four pills, the formula simply won’t work properly as the ingredients will not achieve critical mass to neutralize the toxic side-effects of alcohol. However, we promise that if you take the recommended dosage, Previve will work and it will work well.</p>
 			</div>
+		</div>
+		<div class="final-thoughts">
+			Trust us, and <span>take the full dosage…</span> it only takes twenty seconds.
 		</div>
 	</div>
 	<div class="wrapper wrapper-disclaimer">
@@ -359,11 +460,6 @@
 			</p>
 		</div>
 	</div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/previve.js"></script>

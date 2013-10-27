@@ -154,7 +154,10 @@
          font-weight:bold;
          padding: 8px 0;
          }
-
+		.inactive-link, .inactive-link:hover {
+		color: #c1c1c1;
+		text-decoration: none;
+		}
          @media (max-width: 991px) {
          .feature {
          padding-left: 40px;
@@ -210,7 +213,7 @@
                <div class="navbar-hp col-sm-2"><a href="how-it-works.html">How It Works</a></div>
                <div class="navbar-hp col-sm-2"><a href="why-four-pills.html">Why Four Pills?</a></div>
                <div class="navbar-hp col-sm-2"><a href="faq.html">FAQ</a></div>
-               <div class="navbar-hp col-sm-2"><a href="press.html">Press</a></div>
+               <div class="navbar-hp col-sm-2"><a class="inactive-link" href="#">Press</a></div>
             </div>
          </div>
       </div>
@@ -222,9 +225,6 @@
             </p>
          </div>
       </div>
-      <!-- Le javascript
-         ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
       <script src="assets/js/jquery.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
    </body>
