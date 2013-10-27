@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Le styles -->
-      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
       <style type="text/css">
 		@font-face
 		{
@@ -72,19 +72,19 @@
          body {
         font-family:gothamLight;
         padding: 20px 0 0;
-         /* IE10 Consumer Preview */ 
-         background-image: -ms-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
-         /* Mozilla Firefox */ 
-         background-image: -moz-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
-         /* Opera */ 
-         background-image: -o-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
-         /* Webkit (Safari/Chrome 10) */ 
-         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #66CCCC), color-stop(.3, #FFFFFF));
-         /* Webkit (Chrome 11+) */ 
-         background-image: -webkit-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
-         /* W3C Markup, IE10 Release Preview */ 
-         background-image: linear-gradient(to top, #66CCCC 0%, #FFFFFF 30%);      
-         }
+		/* IE10 Consumer Preview */ 
+		background-image: -ms-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
+		/* Mozilla Firefox */ 
+		background-image: -moz-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
+		/* Opera */ 
+		background-image: -o-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #66CCCC), color-stop(.3, #FFFFFF));
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
+		/* W3C Markup, IE10 Release Preview */ 
+		background-image: linear-gradient(to top, #66CCCC 0%, #FFFFFF 30%);      
+		}
  		h3.logo{
  		text-transform: uppercase;
  		font-family:gothamLight;
@@ -213,7 +213,6 @@
                <div class="navbar-hp col-sm-2"><a href="#">Press</a></div>
             </div>
          </div>
-         <!-- /container -->
       </div>
       <div class="wrapper wrapper-disclaimer">
          <div class="container">
@@ -227,17 +226,6 @@
          ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="assets/js/jquery.js"></script>
-      <script src="assets/js/bootstrap-transition.js"></script>
-      <script src="assets/js/bootstrap-alert.js"></script>
-      <script src="assets/js/bootstrap-modal.js"></script>
-      <script src="assets/js/bootstrap-dropdown.js"></script>
-      <script src="assets/js/bootstrap-scrollspy.js"></script>
-      <script src="assets/js/bootstrap-tab.js"></script>
-      <script src="assets/js/bootstrap-tooltip.js"></script>
-      <script src="assets/js/bootstrap-popover.js"></script>
-      <script src="assets/js/bootstrap-button.js"></script>
-      <script src="assets/js/bootstrap-collapse.js"></script>
-      <script src="assets/js/bootstrap-carousel.js"></script>
-      <script src="assets/js/bootstrap-typeahead.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
    </body>
 </html>

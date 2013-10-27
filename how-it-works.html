@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>How it works - Previve</title>
+    <title>How it works - PREVIVE</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
      <style type="text/css">
 		@font-face
@@ -77,17 +77,17 @@
         font-family:gothamLight;
  		padding-top: 30px;
 		/* IE10 Consumer Preview */ 
-		background-image: -ms-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+		background-image: -ms-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
 		/* Mozilla Firefox */ 
-		background-image: -moz-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+		background-image: -moz-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
 		/* Opera */ 
-		background-image: -o-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+		background-image: -o-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
 		/* Webkit (Safari/Chrome 10) */ 
-		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDFFFF), color-stop(.3, #FFFFFF));
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #66CCCC), color-stop(.2, #FFFFFF));
 		/* Webkit (Chrome 11+) */ 
-		background-image: -webkit-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+		background-image: -webkit-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
 		/* W3C Markup, IE10 Release Preview */ 
-		background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 30%);      
+		background-image: linear-gradient(to top, #66CCCC 0%, #FFFFFF 20%);      
  		}
  		.navbar-default {
 		background-color: inherit;
@@ -110,6 +110,9 @@
  		font-weight:normal;
  		color: #66CCCC;
  		}
+ 		.navbar-brand p.tagline {
+ 		display:inline;
+ 		}
  		.navbar-nav {
  		margin-top:3px;
 		font-size: 12px;
@@ -121,6 +124,9 @@
  		margin: 5px 0;
  		line-height:12px;
  		}
+		.navbar-nav li a:hover {
+		text-decoration:underline;
+		}
  		.navbar-nav li.btn-shop a, .navbar-nav li:last-child a{
  		border-right:0;
  		}
@@ -139,11 +145,15 @@
 		margin-top: -4px;
  		}
  		.navbar-nav li.btn-shop a:hover {
- 		background: #000080;
- 		color:#dcdcdc; 			
+ 		color:#dcdcdc !important;
+ 		background:#000080;
+ 		text-decoration:none; 			
  		}
  		.navbar-brand {
  		padding: 5px 15px;
+ 		}
+ 		.navbar-toggle {
+ 		margin-top:0;
  		}
  		.title {
  		text-align: center;
@@ -218,14 +228,15 @@
  		.periodic-table {
  		width:100%;
  		margin: 0 auto;
+ 		padding-bottom:120px;
  		}
  		.periodic-table .row {
  		display:block;
  		margin:0 0 20px 0;
  		}
- 		.periodic-table .row .sub-row {
- 		display:inline-block;
- 		}
+		.periodic-table .row .sub-row {
+		display:inline-block;
+		}
  		.periodic-table .row .sub-row .element {
 		width:70px;
 		height:70px;
@@ -237,7 +248,7 @@
  		.periodic-table .row:last-child .sub-row .element {
 		background-position-y: 219px;
  		}
- 		#periodic-ala, #periodic-nac {
+		#periodic-ala, #periodic-nac {
 		background-position-x: 944px;
 		}
  		#periodic-b1, #periodic-milk {
@@ -276,11 +287,60 @@
  		#periodic-grape {
 		background-position-x: 1024px;
 		}
+		.wrapper {
+		background:#ffffff;
+		}
+		.wrapper-navbar-hp {
+		margin-bottom:40px;
+		}
+		.wrapper-disclaimer {
+		padding: 20px 0;
+		}
+		.disclaimer {
+		color: #000080;
+		font-size:10px;
+		}
+		@media (max-width: 1199px) {
+		.periodic-table {
+		text-align: center;
+		}
+		.periodic-table .row {
+		display: inline-block;
+		margin:0;
+		}
+		.periodic-table .row .sub-row {
+		display:inline-block;
+		}
+		.periodic-table .row .sub-row:first-child, .periodic-table .row .sub-row:last-child {
+		display:block;
+		}
+		#periodic-blank {
+		width:0;
+		height:0;
+		margin-right: 0;
+		margin-left: -2px;
+		}
+		}
+		@media (max-width: 991px) {
+		.navbar-brand p.tagline {		
+		display:none;
+		}
+		}
  		@media (max-width: 767px) {
- 		ul.row-how-it-works li.navbar-how-it-works{
-		width: 18%;
-		margin-right: 2.5%;
-		} 			
+		ul.row-how-it-works li.navbar-how-it-works, ul.row-how-it-works li.navbar-how-it-works:last-child {
+		text-align: center;
+		width: 30%;
+		margin: 15px auto;
+		}
+		.content {
+		width: 90%;
+		height: auto;
+		margin: 40px auto;
+		line-height: 25px;
+		}
+		.navbar-nav li a {
+ 		border-right:0;
+ 		}
  		}
  	</style>
 
@@ -301,7 +361,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><span><strong>pre</strong>vive</span> prevents hangover symptoms, scientifically.</a>
+          <a class="navbar-brand" href="/"><span><strong>pre</strong>vive</span> <p class="tagline">prevents hangover symptoms, scientifically.</p></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -342,7 +402,7 @@
 		<div class="periodic-table">
 			<div class="row">
 				<div class="sub-row">
-					<div class="element"></div>			
+					<div class="element" id="periodic-blank"></div>			
 					<div class="element" id="periodic-ala"></div>
 					<div class="element" id="periodic-b1"></div>
 					<div class="element" id="periodic-b2"></div>
@@ -381,6 +441,14 @@
 					<div class="element" id="periodic-convenient"></div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="wrapper wrapper-disclaimer">
+		<div class="container">
+			<p class="disclaimer">
+			Remember, this product does not prevent intoxication, alcohol poisoning, or alcohol abuse. Please drink responsibly. Never drink and drive! Do not consume alcohol if you are not of the legal age to do so, while pregnant or 
+			nursing. These statements have not been evaluated by the Food and Drug Administration and Previve is not intended to diagnose, mitigate, treat, cure, or prevent any disease. Practice safe drinking!
+			</p>
 		</div>
 	</div>
 
