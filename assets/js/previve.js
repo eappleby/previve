@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#how-energizes').click(function(){ 
+	$('#how-energizes').parent().click(function(){ 
 		resetpage();
 		$('#how-energizes').parent().addClass("active");
 		$('.content-anchor').text("ENERGIZE");
@@ -17,7 +17,7 @@ $(document).ready(function(){
 		$('#periodic-tau').css({'background-position-y': '70px'});
 		$('#periodic-zn').css({'background-position-y': '70px'});
 	});
-	$('#how-prevents').click(function(){ 
+	$('#how-prevents').parent().click(function(){ 
 		resetpage();
 		$('#how-prevents').parent().addClass("active");
 		$('.content-anchor').text("PREVENT");
@@ -33,7 +33,7 @@ $(document).ready(function(){
 		$('#periodic-turmeric').css({'background-position-y': '70px'});
 		$('#periodic-zn').css({'background-position-y': '70px'});
 	});
-	$('#how-promotes').click(function(){ 
+	$('#how-promotes').parent().click(function(){ 
 		resetpage();
 		$('#how-promotes').parent().addClass("active");
 		$('.content-anchor').text("PROMOTES");
@@ -47,7 +47,7 @@ $(document).ready(function(){
 		$('#periodic-milk').css({'background-position-y': '70px'});
 		$('#periodic-turmeric').css({'background-position-y': '70px'});
 	});
-	$('#how-convenient').click(function(){ 
+	$('#how-convenient').parent().click(function(){ 
 		resetpage();
 		$('#how-convenient').parent().addClass("active");
 		$('.content-anchor').text("CONVENIENT.");
@@ -55,7 +55,7 @@ $(document).ready(function(){
 		$('.content-text').text("PREVIVE’s unique format is small and light enough to easily carry around, individually packaged to keep it sanitary and safe on the go, and a single dose, eliminating the responsibility to consume it often.");
 		$('#periodic-convenient').css({'background-position-y': '70px'});
 	});
-	$('#how-affordable').click(function(){ 
+	$('#how-affordable').parent().click(function(){ 
 		resetpage();
 		$('#how-affordable').parent().addClass("active");
 		$('.content-anchor').text("AFFORDABLE.");

@@ -2,7 +2,7 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>Previve</title>
+      <title>PREVIVE - prevents hangover symptoms, scientifically.</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -71,20 +71,19 @@
 		}
          body {
         font-family:gothamLight;
-         padding-top: 20px;
-         padding-bottom: 40px;
+        padding: 20px 0 0;
          /* IE10 Consumer Preview */ 
-         background-image: -ms-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+         background-image: -ms-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
          /* Mozilla Firefox */ 
-         background-image: -moz-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+         background-image: -moz-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
          /* Opera */ 
-         background-image: -o-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+         background-image: -o-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
          /* Webkit (Safari/Chrome 10) */ 
-         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDFFFF), color-stop(.3, #FFFFFF));
+         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #66CCCC), color-stop(.3, #FFFFFF));
          /* Webkit (Chrome 11+) */ 
-         background-image: -webkit-linear-gradient(bottom, #EDFFFF 0%, #FFFFFF 30%);
+         background-image: -webkit-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 30%);
          /* W3C Markup, IE10 Release Preview */ 
-         background-image: linear-gradient(to top, #EDFFFF 0%, #FFFFFF 30%);      
+         background-image: linear-gradient(to top, #66CCCC 0%, #FFFFFF 30%);      
          }
  		h3.logo{
  		text-transform: uppercase;
@@ -101,20 +100,30 @@
  		font-size:18px;
  		color: #000080;
  		}
-         .featurette {
+         .feature {
          overflow:hidden;
          padding-bottom:80px;
          padding-left: 115px;
          }
-         .featurette-messaging {
+         .feature-messaging {
          padding-top:120px;
          text-align:left;
+ 		color: #66CCCC;
+ 		font-family:times;
+ 		font-size:20px;
          }
-         .featurette-image {
+         .feature-messaging span {
+ 		color: #000080;
+ 		text-transform: uppercase;
+ 		font-family:gothamLight;
+ 		font-size: 22px;
+		font-weight: bold;
+         }
+         .feature-image {
          text-align:right;
          padding-right: 80px;
      	 }
-         .featurette-image img {
+         .feature-image img {
          height: auto;
          max-width: 100%;
          vertical-align: middle;
@@ -129,31 +138,41 @@
          .wrapper-disclaimer {
          padding: 20px 0;
          }
+         .disclaimer {
+         color: #000080;
+         font-size:10px;
+         }
          .masthead {
          text-align:center;
          padding-bottom:50px;
          }
          .navbar-hp {
          text-align:center;
+         text-transform:uppercase;
+         color: #000080;
+         font-size:14px;
+         font-weight:bold;
+         padding: 8px 0;
          }
 
          @media (max-width: 991px) {
-         .featurette {
+         .feature {
          padding-left: 40px;
 		 }
-         .featurette-messaging {
+         .feature-messaging {
          padding-top: 40px;
 		 }
 		 }
 
          @media (max-width: 767px) {
-         .featurette {
+         .feature {
          padding-left: 0px;
+         padding-bottom: 40px;
 		 }
-         .featurette-messaging {
+         .feature-messaging {
          display:none;
          }
-         .featurette-image {
+         .feature-image {
          max-width:90%;
          padding-right: 0;
          text-align:center;
@@ -172,14 +191,14 @@
             <h3 class="logo"><span>pre</span>vive</h3>
             <h4 class="tagline">prevents hangover symptoms, scientifically.</h4>
          </div>
-         <div class="row featurette">
-         	<div class="col-sm-6 featurette-image">
+         <div class="row feature">
+         	<div class="col-sm-6 feature-image">
 	            <img src="assets/img/previve-packaging-1-box.png">
 	        </div>
-            <div class="col-sm-6 featurette-messaging">
-	            <p><strong>ENERGIZES</strong> your night</p>
-	            <p><strong>PREVENTS</strong> hangover symptons</p>
-	            <p><strong>PROMOTES</strong> long-term wellness</p>
+            <div class="col-sm-6 feature-messaging">
+	            <p><span>ENERGIZES</span> your night</p>
+	            <p><span>PREVENTS</span> hangover symptons</p>
+	            <p><span>PROMOTES</span> long-term wellness</p>
 	        </div>
          </div>
       </div>
