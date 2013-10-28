@@ -233,10 +233,10 @@
  		display:block;
  		margin:0 0 20px 0;
  		}
-		.periodic-table .row .sub-row {
+		.periodic-table .row .sub-row, .periodic-table .row .sub-row .sub-sub-row {
 		display:inline-block;
 		}
- 		.periodic-table .row .sub-row .element {
+ 		.periodic-table .row .sub-row .sub-sub-row .element {
 		width:70px;
 		height:70px;
 		background-image:url("assets/img/how-it-works-sprite.png");
@@ -244,7 +244,7 @@
 		margin-right: 12px;
 		display:inline-block;
 		}
- 		.periodic-table .row:last-child .sub-row .element {
+ 		.periodic-table .row:last-child .sub-row .sub-sub-row .element {
 		background-position-y: 219px;
  		}
 		#periodic-ala, #periodic-nac {
@@ -307,9 +307,6 @@
 		display: inline-block;
 		margin:0;
 		}
-		.periodic-table .row .sub-row {
-		display:inline-block;
-		}
 		.periodic-table .row .sub-row:first-child, .periodic-table .row .sub-row:last-child {
 		display:block;
 		}
@@ -342,7 +339,7 @@
  		}
  		}
  		@media (max-width: 479px) {
-		.periodic-table .row .sub-row {
+		.periodic-table .row .sub-row .sub-sub-row {
 		display:block;
 		}
  		}
@@ -407,43 +404,67 @@
 		<div class="periodic-table">
 			<div class="row">
 				<div class="sub-row">
-					<div class="element" id="periodic-blank"></div>			
-					<div class="element" id="periodic-ala"></div>
-					<div class="element" id="periodic-b1"></div>
-					<div class="element" id="periodic-b2"></div>
-					<div class="element" id="periodic-b3"></div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-blank"></div>			
+						<div class="element" id="periodic-ala"></div>
+						<div class="element" id="periodic-b1"></div>
+					</div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-b2"></div>
+						<div class="element" id="periodic-b3"></div>
+					</div>
 				</div>
 				<div class="sub-row">
-					<div class="element" id="periodic-b5"></div>
-					<div class="element" id="periodic-b6"></div>
-					<div class="element" id="periodic-b12"></div>
-					<div class="element" id="periodic-bfn"></div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-b5"></div>
+						<div class="element" id="periodic-b6"></div>
+					</div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-b12"></div>
+						<div class="element" id="periodic-bfn"></div>
+					</div>
 				</div>
 				<div class="sub-row">
-					<div class="element" id="periodic-c"></div>
-					<div class="element" id="periodic-cr"></div>
-					<div class="element" id="periodic-e"></div>
-					<div class="element" id="periodic-fte"></div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-c"></div>
+						<div class="element" id="periodic-cr"></div>
+					</div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-e"></div>
+						<div class="element" id="periodic-fte"></div>
+					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="sub-row">
-					<div class="element" id="periodic-grape"></div>
-					<div class="element" id="periodic-nac"></div>
-					<div class="element" id="periodic-milk"></div>
-					<div class="element" id="periodic-mg"></div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-grape"></div>
+						<div class="element" id="periodic-nac"></div>
+					</div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-milk"></div>
+						<div class="element" id="periodic-mg"></div>
+					</div>
 				</div>
 				<div class="sub-row">
-					<div class="element" id="periodic-mn"></div>
-					<div class="element" id="periodic-mo"></div>
-					<div class="element" id="periodic-se"></div>
-					<div class="element" id="periodic-tau"></div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-mn"></div>
+						<div class="element" id="periodic-mo"></div>
+					</div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-se"></div>
+						<div class="element" id="periodic-tau"></div>
+					</div>
 				</div>
 				<div class="sub-row">
-					<div class="element" id="periodic-tumeric"></div>
-					<div class="element" id="periodic-zn"></div>
-					<div class="element" id="periodic-affordable"></div>
-					<div class="element" id="periodic-convenient"></div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-tumeric"></div>
+						<div class="element" id="periodic-zn"></div>
+					</div>
+					<div class="sub-sub-row">
+						<div class="element" id="periodic-affordable"></div>
+						<div class="element" id="periodic-convenient"></div>
+					</div>
 				</div>
 			</div>
 		</div>
