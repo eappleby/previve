@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FAQ - PREVIVE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+     <style type="text/css">
+		@font-face
+		{
+		font-family: gothamBlack;
+		src: url(assets/fonts/Gotham-Black.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBlackItalic;
+		src: url(assets/fonts/Gotham-Blackitalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBold;
+		src: url(assets/fonts/Gotham-Bold.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBoldItalic;
+		src: url(assets/fonts/Gotham-BoldItalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBook;
+		src: url(assets/fonts/Gotham-Book.otf);
+		}
+		@font-face
+		{
+		font-family: gothamBookItalic;
+		src: url(assets/fonts/Gotham-BookItalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamExtraLight;
+		src: url(assets/fonts/Gotham-extralight.otf);
+		}
+		@font-face
+		{
+		font-family: gothamExtraLightItalic;
+		src: url(assets/fonts/Gotham-ExtraLightItalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamLight;
+		src: url(assets/fonts/Gotham-Light.otf);
+		}
+		@font-face
+		{
+		font-family: gothamLightItalic;
+		src: url(assets/fonts/Gotham-LightItalic.otf);
+		}
+		@font-face
+		{
+		font-family: gothamMedium;
+		src: url(assets/fonts/Gotham-Medium.otf);
+		}
+		@font-face
+		{
+		font-family: gothamMediumItalic;
+		src: url(assets/fonts/Gotham-MediumItalic.otf);
+		}
+        body {
+        font-family:gothamLight;
+ 		color:#000080;
+ 		font-size:16px;
+ 		padding-top: 30px;
+
+		/* IE10 Consumer Preview */ 
+		background-image: -ms-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
+		/* Mozilla Firefox */ 
+		background-image: -moz-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
+		/* Opera */ 
+		background-image: -o-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #66CCCC), color-stop(.2, #FFFFFF));
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(bottom, #66CCCC 0%, #FFFFFF 20%);
+		/* W3C Markup, IE10 Release Preview */ 
+		background-image: linear-gradient(to top, #66CCCC 0%, #FFFFFF 20%);      
+ 		}
+ 		.qna {
+ 		padding-bottom:100px;
+ 		}
+ 		.qna .question-list {
+ 		position:relative;
+		vertical-align: top;
+ 		display:inline-block;
+ 		width:400px;
+ 		text-align:right;
+ 		border-right:3px solid #66CCCC;
+ 		padding-right:20px;
+ 		margin-right:15px;
+ 		font-family:times;
+ 		font-style:italic;
+ 		}
+ 		.qna .question-list a.question {
+ 		color: #000080;
+ 		display:block;
+ 		margin:10px 0;
+ 		}
+ 		.qna .question-list a.active {
+ 		color: #66CCCC;
+ 		}
+ 		.qna .question-list .circle-top, .qna .question-list .circle-bottom {
+		position: absolute;
+		right: -7px;
+		width: 11px;
+		height: 11px;
+		float: left;
+		margin: 0;
+		border-radius: 50%;
+		background: #66CCCC;
+ 		}
+ 		.qna .question-list .circle-top {
+		top: -6px;
+ 		}
+ 		.qna .question-list .circle-bottom {
+		bottom: -6px;
+ 		}
+ 		.qna .answer {
+		display: inline-block;
+		width: 715px;
+		margin-top: 10px;
+		font-size: 14px;
+		font-weight: bold;
+		}
+ 		.navbar-default {
+		background-color: inherit;
+		border-color: #fff;
+ 		}
+ 		.navbar-brand {
+ 		font-family:times;
+ 		font-style:italic;
+ 		font-size:12px;
+ 		color: #000080 !important;	
+ 		}
+ 		.navbar-brand span{
+ 		text-transform: uppercase;
+ 		font-family:gothamLight;
+ 		font-style:normal;
+ 		font-size:24px;
+ 		margin-right:5px;
+ 		}
+ 		.navbar-brand span strong{
+ 		font-weight:normal;
+ 		color: #66CCCC;
+ 		}
+ 		.navbar-brand p.tagline {
+ 		display:inline;
+ 		}
+ 		.navbar-nav {
+ 		margin-top:3px;
+		font-size: 12px;
+ 		}
+ 		.navbar-nav li a {
+ 		color: #000080 !important;
+ 		border-right:1px solid #000080;
+ 		padding: 0 15px;
+ 		margin: 5px 0;
+ 		line-height:12px;
+ 		}
+		.navbar-nav li a:hover {
+		text-decoration:underline;
+		}
+ 		.navbar-nav li.btn-shop a, .navbar-nav li:last-child a{
+ 		border-right:0;
+ 		}
+ 		.navbar-nav li.active a {
+ 		color: #66CCCC !important;
+ 		background-color:#fff !important ;
+ 		}
+ 		.navbar-nav li.btn-shop a {
+ 		font-family:times;
+ 		font-style:italic;
+ 		background: #000080;
+ 		color:#fff !important;
+ 		padding: 5px 15px;
+ 		margin: 0;
+		line-height: 20px;
+		margin-top: -4px;
+ 		}
+ 		.navbar-nav li.btn-shop a:hover {
+ 		color:#dcdcdc !important;
+ 		background:#000080;
+ 		text-decoration:none; 			
+ 		}
+ 		.navbar-brand {
+ 		padding: 5px 15px;
+ 		}
+ 		.navbar-toggle {
+ 		margin-top:0;
+ 		}
+ 		.title {
+ 		text-align: center;
+		padding: 20px 0 50px;
+		font-size: 26px;
+		color: #66CCCC;
+ 		}
+ 		.title span{
+		color: #000080;
+ 		}
+ 		.content .content-text {
+ 		color: #000080;
+ 		display:inline;
+ 		}
+		.wrapper {
+		background:#ffffff;
+		}
+		.wrapper-disclaimer {
+		padding: 20px 0;
+		}
+		.disclaimer {
+		color: #000080;
+		font-size:10px;
+		}
+		@media (max-width: 991px) {
+		.navbar-brand p.tagline {		
+		display:none;
+		}
+		}
+ 		@media (max-width: 767px) {
+		.content {
+		width: 90%;
+		height: auto;
+		margin: 40px auto;
+		line-height: 25px;
+		}
+		.navbar-nav li a {
+ 		border-right:0;
+ 		}
+ 		}
+ 	</style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><span><strong>pre</strong>vive</span> <p class="tagline">prevents hangover symptoms, scientifically.</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="btn-shop"><a href="#">shop online</a></li>
+            <li><a href="previve-story.html">THE PREVIVE STORY</a></li>
+            <li><a href="how-it-works.html">HOW IT WORKS</a></li>
+            <li><a href="why-four-pills.html">WHY 4 PILLS?</a></li>
+            <li class="active"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+		<div class="title">
+			<span>FREQUENTLY ASKED</span> QUESTIONS
+		</div>
+		<div class="qna">
+			<div class="question-list">
+				<a class="question" id="does-previve-work" href="#">does previve really work?</a>
+				<a class="question" id="how-often-take" href="#">how often do i take previve?</a>
+				<a class="question active" id="how-different" href="#">how is previve different from other hangover remedies?</a>
+				<a class="question" id="what-are-ingredients" href="#">what are the ingredients in previve?</a>
+				<a class="question" id="contain-caffeine" href="#">does previve contain caffeine?</a>
+				<a class="question" id="is-safe" href="#">how do i know that previve is safe?</a>
+				<a class="question" id="is-addictive" href="#">is previve addictive?</a>
+				<a class="question" id="any-side-effects" href="#">does previve have any side-effects?</a>
+				<a class="question" id="help-alcoholism" href="#">can previve help with alcoholism?</a>
+				<a class="question" id="take-if-dont-drink" href="#">should i take previve if i don’t drink very often?</a>
+				<a class="question" id="prevent-intoxication" href="#">will previve prevent me from getting intoxicated?</a>
+				<a class="question" id="where-to-buy" href="#">where can i buy previve?</a>
+				<div class="circle-top"></div>
+				<div class="circle-bottom"></div>
+			</div>
+			<div class="answer">
+				<p>The hangover prevention market is a growing market, still in its infancy. There are over two dozen products, ranging from shots to beverages to even patches, all of which proclaim various supplements to be their miracle cure to hangovers. In fact there are over 110 ingredients in the industry that are claimed to be effective. This tells us that the market is highly fragmented! Compare this to the energy drink industry; it’s very clear what supplements are effective, most energy drink contains taurine, guarana, caffeine, and an overdose of B vitamins.</p>
+				<p>The makers of PREVIVE have spent hundreds, if not thousands of hours researching the market, ingredient efficacy, and consumer needs. First of all, let’s get one thing straight; there is no miracle cure to hangovers. angover is not a disease, it is a collection of symptoms and each person’s experience is different. With that said, PREVIVE is designed to target the three main factors that result in, what we call, a hangover; increased toxicity, dehydration, and nutrient depletion. PREVIVE targets these three key areas and uses the best possible ingredients to help your start the night right and feel great the next morning.</p>
+				<p>Finally, PREVIVE was developed with the customer in mind. That means creating a product that tastes great, provides results, and fits into our lifestyles. Personally, we at PREVIVE don’t think to ourselves, “man, I’m probably going to get drunk tonight I should take my hangover cure pills,” or “I had too much to drink tonight, I should take my hangover prevention shot before I go to bed!” When we get ready for a night there are only three things running through our mind, 1) I need some mixers S.T.A.T., 2) if I’m going to make it through the night, I need some energy, quick!, and 3) I hope I don’t feel this in the morning!</p>
+				<p>PREVIVE fits in perfectly! PREVIVE is great for shots or as a mixer, PREVIVE gives you the energy kick you need to get your night started, and provides the antioxidants, electrolytes, and nutrients your body requires when trying to fight off a hangover.</p>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper wrapper-disclaimer">
+		<div class="container">
+			<p class="disclaimer">
+			Remember, this product does not prevent intoxication, alcohol poisoning, or alcohol abuse. Please drink responsibly. Never drink and drive! Do not consume alcohol if you are not of the legal age to do so, while pregnant or 
+			nursing. These statements have not been evaluated by the Food and Drug Administration and Previve is not intended to diagnose, mitigate, treat, cure, or prevent any disease. Practice safe drinking!
+			</p>
+		</div>
+	</div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/previve.js"></script>
+  </body>
+</html>
