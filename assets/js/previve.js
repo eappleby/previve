@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('#how-energizes').parent().click(function(){ 
-		resetpage();
+		reset_tabs();
 		$('#how-energizes').parent().addClass("active");
 		$('.content-anchor').text("ENERGIZE");
 		$('.content-header').text("YOUR NIGHT.");
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		$('#periodic-zn').css({'background-position-y': '70px'});
 	});
 	$('#how-prevents').parent().click(function(){ 
-		resetpage();
+		reset_tabs();
 		$('#how-prevents').parent().addClass("active");
 		$('.content-anchor').text("PREVENT");
 		$('.content-header').text("HANGOVER SYMPTOMS.");
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		$('#periodic-zn').css({'background-position-y': '70px'});
 	});
 	$('#how-promotes').parent().click(function(){ 
-		resetpage();
+		reset_tabs();
 		$('#how-promotes').parent().addClass("active");
 		$('.content-anchor').text("PROMOTES");
 		$('.content-header').text("LONG TERM WELLNESS.");
@@ -48,7 +48,7 @@ $(document).ready(function(){
 		$('#periodic-turmeric').css({'background-position-y': '70px'});
 	});
 	$('#how-convenient').parent().click(function(){ 
-		resetpage();
+		reset_tabs();
 		$('#how-convenient').parent().addClass("active");
 		$('.content-anchor').text("CONVENIENT.");
 		$('.content-header').text("");
@@ -56,14 +56,14 @@ $(document).ready(function(){
 		$('#periodic-convenient').css({'background-position-y': '70px'});
 	});
 	$('#how-affordable').parent().click(function(){ 
-		resetpage();
+		reset_tabs();
 		$('#how-affordable').parent().addClass("active");
 		$('.content-anchor').text("AFFORDABLE.");
 		$('.content-header').text("");
 		$('.content-text').text("Even though you may not get a bad hangover from a glass or two of wine, the health benefits from PREVIVE make it appropriate to any time you drink. With this in mind, we were careful to keep the price per dose at a point that would enable users to take it frequently, without breaking the bank, even though that has meant compromising our own margins.");
 		$('#periodic-affordable').css({'background-position-y': '70px'});
 	});
-	function resetpage () {
+	function reset_tabs () {
 		$('#how-energizes').parent().removeClass("active");
 		$('#how-prevents').parent().removeClass("active");
 		$('#how-promotes').parent().removeClass("active");
@@ -71,5 +71,68 @@ $(document).ready(function(){
 		$('#how-affordable').parent().removeClass("active");
 		$('.periodic-table .row:first-child .sub-row .element').css({'background-position-y': '0'});
 		$('.periodic-table .row:last-child .sub-row .element').css({'background-position-y': '219px'});
+	}
+	$('#does-previve-work').click(function(){ 
+		$('.answer').html("Yes.");
+		reset_questions($(this));
+	});
+	$('#how-often-take').click(function(){ 
+		reset_questions($(this));
+		$('.answer').html("Often.");
+	});
+	$('#how-different').click(function(){ 
+		$('.answer').html("<p>The hangover prevention market is a growing market, still in its infancy. There are over two dozen products, ranging from shots to beverages to even patches, all of which proclaim various supplements to be their miracle cure to hangovers. In fact there are over 110 ingredients in the industry that are claimed to be effective. This tells us that the market is highly fragmented! Compare this to the energy drink industry; it’s very clear what supplements are effective, most energy drink contains taurine, guarana, caffeine, and an overdose of B vitamins.</p><p>The makers of PREVIVE have spent hundreds, if not thousands of hours researching the market, ingredient efficacy, and consumer needs. First of all, let’s get one thing straight; there is no miracle cure to hangovers. angover is not a disease, it is a collection of symptoms and each person’s experience is different. With that said, PREVIVE is designed to target the three main factors that result in, what we call, a hangover; increased toxicity, dehydration, and nutrient depletion. PREVIVE targets these three key areas and uses the best possible ingredients to help your start the night right and feel great the next morning.</p><p>Finally, PREVIVE was developed with the customer in mind. That means creating a product that tastes great, provides results, and fits into our lifestyles. Personally, we at PREVIVE don’t think to ourselves, “man, I’m probably going to get drunk tonight I should take my hangover cure pills,” or “I had too much to drink tonight, I should take my hangover prevention shot before I go to bed!” When we get ready for a night there are only three things running through our mind, 1) I need some mixers S.T.A.T., 2) if I’m going to make it through the night, I need some energy, quick!, and 3) I hope I don’t feel this in the morning!</p><p>PREVIVE fits in perfectly! PREVIVE is great for shots or as a mixer, PREVIVE gives you the energy kick you need to get your night started, and provides the antioxidants, electrolytes, and nutrients your body requires when trying to fight off a hangover.</p>");
+		reset_questions($(this));
+	});
+	$('#what-are-ingredients').click(function(){ 
+		$('.answer').html("Lots.");
+		reset_questions($(this));
+	});
+	$('#contain-caffeine').click(function(){ 
+		$('.answer').html("No.");
+		reset_questions($(this));
+	});
+	$('#is-safe').click(function(){ 
+		$('.answer').html("Yes.");
+		reset_questions($(this));
+	});
+	$('#is-addictive').click(function(){ 
+		$('.answer').html("No.");
+		reset_questions($(this));
+	});
+	$('#any-side-effects').click(function(){ 
+		$('.answer').html("No.");
+		reset_questions($(this));
+	});
+	$('#help-alcoholism').click(function(){ 
+		$('.answer').html("No.");
+		reset_questions($(this));
+	});
+	$('#take-if-dont-drink').click(function(){ 
+		$('.answer').html("Sure.");
+		reset_questions($(this));
+	});
+	$('#prevent-intoxication').click(function(){ 
+		$('.answer').html("I've been instructed by my lawyer to say No.");
+		reset_questions($(this));
+	});
+	$('#where-to-buy').click(function(){ 
+		$('.answer').html("Here.");
+		reset_questions($(this));
+	});
+	function reset_questions(link) {
+		$('#does-previve-work').removeClass("active");
+		$('#how-often-take').removeClass("active");
+		$('#how-different').removeClass("active");
+		$('#what-are-ingredients').removeClass("active");
+		$('#contain-caffeine').removeClass("active");
+		$('#is-safe').removeClass("active");
+		$('#is-addictive').removeClass("active");
+		$('#any-side-effects').removeClass("active");
+		$('#help-alcoholism').removeClass("active");
+		$('#take-if-dont-drink').removeClass("active");
+		$('#prevent-intoxication').removeClass("active");
+		$('#where-to-buy').removeClass("active");
+		link.addClass("active");
 	}
 });
