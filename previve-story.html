@@ -102,10 +102,10 @@
  		width:50%;
  		border-right:3px solid #66CCCC;
  		padding-right:5%;
- 		margin-right:5%;
- 		min-height: 3700px;
+ 		margin-right:2%;
+ 		min-height: 4920px;
  		}
- 		#hole-top {
+ 		.hole-top {
 		position: absolute;
 		width: 11px;
 		height: 11px;
@@ -116,7 +116,7 @@
 		right: -7px;
 		top: -6px;
  		}
- 		#arrow-bottom {
+ 		.arrow-bottom {
 		position: absolute;
 		width: 0;
 		height: 0;
@@ -126,17 +126,42 @@
 		right: -10px;
 		bottom: -6px;
  		}
+ 		.large-num {
+		font-family: gothamBlack;
+		color: #66CCCC;
+		font-weight: bold;
+		font-size: 300px;
+		margin-bottom: -70px;
+ 		}
+ 		.highlight {
+ 		text-transform: uppercase;
+		font-size: 22px;
+		font-family: gothamBold;
+ 		}
+ 		.highlight span {
+		font-family: gothamLight;
+		display: block;
+		font-size: 40px;
+ 		}
  		.story .right-pane {
  		position:relative;
 		display: inline-block;
 		vertical-align: top;
-		width: 43%;
+		width: 45%;
 		margin-top: 10px;
 		}
 
  		.story .left-pane .left-item{
 		position: absolute;
  		right: 30px;
+ 		}
+
+ 		.story .right-pane .right-item{
+		position: absolute;
+ 		}
+
+ 		.story-date {
+ 		margin-bottom:10px;
  		}
 
  		.story .left-pane .left-item .story-date {
@@ -156,7 +181,7 @@
  		}
 
 		#aug-18-2008 {
-		top:10px;
+		top:56px;
 		}
 
 		#aug-18-2008 .story-image {
@@ -165,7 +190,7 @@
 		}
 
 		#sep-27-2008 {
-		top:300px;
+		top: 375px;
 		}
 
 		#sep-27-2008 .story-image {
@@ -229,37 +254,111 @@
 		color: #66CCCC;
 		}
 
-
 		#story-num-1  {
-		top:1600px;
+		top:1443px;
 		}
 
 		#oct-23-2009  {
-		top:1900px;
-		}
-
-		#story-num-3  {
 		top:2200px;
 		}
-
+		#oct-23-2009 .story-image {
+		text-align: right;
+		margin-bottom: 20px;
+		}
+		#oct-23-2009 .story-content {
+		margin-top:10px;
+		}
+		#story-num-3  {
+		top:2800px;
+		}
+		#story-num-3 .highlight {
+		margin-left: 150px;
+		}
 		#story-num-4  {
-		top:2500px;
+		top:3500px;
+		}
+		#story-num-4 .highlight {
+		margin-left: 50px;
 		}
 
 		#previve-pagers-image {
-		top:2800px;
+		top:4300px;
 		}
 
 		#nov-14-2012  {
 		position: absolute;
 		right: 0;
-		top:3300px;
+		top:4700px;
+		text-align: center;
+		background: white;
+		padding: 15px;
+		right: -286px;
+		width: 100%;
 		}
 
-
-
-
-
+		#aug-17-2008 {
+		top:0;
+		}
+		#aug-17-2008 .story-image {
+		float:left;
+		margin-right:18px;
+		}
+		#oct-10-2008 {
+		top:400px;
+		}
+		#oct-10-2008 .story-image{
+		float:left;
+		margin-right:18px;
+		}
+		#oct-10-2008 .story-content{
+		}
+		#oct-25-2008 {
+		top:874px;
+		}
+		#oct-25-2008 .story-image {
+		float: left;
+		margin-right:18px;
+		}
+		#feb-22-2009 {
+		top:1640px;
+		}
+		#feb-22-2009 .story-date{
+		margin-bottom:30px;
+		}
+		#feb-22-2009 .story-image{
+		float:left;
+		margin-right:18px;
+		}
+		#feb-22-2009 .story-content {
+		padding-top: 64px;
+		}
+		#story-num-2 {
+		top:2000px;
+		}
+		#sep-17-2010 {
+		top:3100px;
+		}
+		#sep-17-2010 .story-image {
+		padding-bottom: 30px;
+		}
+		#jul-9-2012 {
+		top:3950px;
+		}
+		#jul-9-2012 .story-image {
+		float:left;
+		margin-right:18px;
+		}
+		#jul-9-2012 .story-date {
+		padding-top: 25px;
+		}
+		#jul-9-2012 .story-content span, #oct-4-2012 .story-content span {
+		font-family: gothamLight;
+		font-size: 20px;
+		color: #66CCCC;
+		}
+		#oct-4-2012 {
+		top:4400px;
+		}
 
  		.navbar-default {
 		background-color: inherit;
@@ -499,11 +598,157 @@
 					</div>
 				</div>
 
-				<div id="hole-top"></div>
-				<div id="arrow-bottom"></div>
+				<div class="hole-top"></div>
+				<div class="arrow-bottom"></div>
 			</div>
 			<div class="right-pane">
-				bla2
+				
+				<div class="right-item" id="aug-17-2008">
+					<div class="story-image">
+						<img src="assets/img/building-large.png" alt="Columbia business school">
+					</div>
+					<div class="story-date">
+						August 17, 2008
+					</div>
+					<div class="story-content">
+						Ian attends Columbia Business School.
+					</div>
+				</div>
+
+				<div class="right-item" id="oct-10-2008">
+					<div class="story-date">
+						October 10, 2008
+					</div>
+					<div class="story-image">
+						<img src="assets/img/story-pills-2.png" alt="Many pills">
+					</div>
+					<div class="story-content">
+						Many of the all-in-one pills and drinks prove ineffective. Some products do work but they also have their drawbacks. The formulas require Ian to remember to take approximately ten pills or three drinks throughout the night and consisted of 50,000% of the daily vitamin B1 recommended dosage, which felt wrong.
+					</div>
+				</div>
+
+				<div class="right-item" id="oct-25-2008">
+					<div class="story-image">
+						<img src="assets/img/dollar-sign.png" alt="Dollar Sign">
+					</div>
+					<div class="story-date">
+						October 25, 2008
+					</div>
+					<div class="story-content">
+						Ian realizes he’s spending too much money on hangover remedies. Because many pills or drinks are required to be effective, each night costs $4–$8 and adds up.
+					</div>
+				</div>
+
+				<div class="right-item" id="feb-22-2009">
+					<div class="story-date">
+						February 22, 2009
+					</div>
+					<div class="story-image">
+						<img src="assets/img/book-and-leaf.png" alt="Book and leaf">
+					</div>
+					<div class="story-content">
+						This objective was thoroughly achieved with blends of natural ingredients that had been shown in academic studies to be successful at combating the effects of alcohol.
+					</div>
+				</div>
+
+				<div class="right-item" id="story-num-2">
+					<div class="large-num">
+						02
+					</div>
+					<div class="highlight">
+						<span>Minimizing the hangover you feel while you drink.</span>
+					</div>
+				</div>
+
+				<div class="right-item" id="sep-17-2010">
+					<div class="story-image">
+						<img src="assets/img/sprockets.png" alt="Scientific studies">
+					</div>
+					<div class="story-date">
+						September 17, 2010
+					</div>
+					<div class="story-content">
+						After a year of poring over innumerous scientific studies and testing individual ingredients, Ian developed an antioxidant blend that should help reduce the impact from free radicals that results from alcohol consumption.
+					</div>
+				</div>
+
+				<div class="right-item" id="jul-9-2012">
+					<div class="story-image">
+						<img src="assets/img/clock.png" alt="Time released capsule">
+					</div>
+					<div class="story-date">
+						July 9, 2012
+					</div>
+					<div class="story-content">
+						By licensing a <span>patented extended-release process</span> the formula was adapted to a single dosage.
+					</div>
+				</div>
+
+				<div class="right-item" id="oct-4-2012">
+					<div class="story-date">
+						October 4, 2012
+					</div>
+					<div class="story-content">
+						With the help of industrial designers, packaging was improved so the product would be available in <span>convenient, pocket-friendly, pouches.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="team">
+			<div class="title">
+				TEAM
+			</div>
+			<div class="intro">
+				nice to meet you, my name is <span>Ian Weber</span>
+			</div>
+			<div class="ian-image">
+				<img src="assets/img/ian-weber-looking-cool.png" alt="Ian Weber looking cool">
+			</div>
+			<div class="location">
+				<div class="loc-image">
+					<img src="assets/img/location-drop.png" alt="location drop">
+				</div>
+				<div class="loc-content">
+					I live in Chelsea, New York City and I am the founder and CEO of PREVIVE
+				</div>
+			</div>
+			<div class="timeline">
+				<div class="title">
+					In another life...
+				</div>
+				<div class="undergrad">
+					<div class="undergrad-image">
+						<img src="assets/img/book-icon.png" alt="book">
+					</div>
+					<div class="undergrad-content">
+						I graduated Cum Laude from the University of Pennsylvania with a degree in Systems Engineering and another in Economics.
+					</div>
+				</div>
+				<div class="experience">
+					<div class="experience-image">
+						<img src="assets/img/briefcase-icon.png" alt="briefcase">
+					</div>
+					<div class="experience-content">
+						I've held careers in Brand Strategy Consulting and Equity Research.
+					</div>
+				</div>
+				<div class="mba">
+					<div class="mba-image">
+						<img src="assets/img/building-icon.png" alt="building">
+					</div>
+					<div class="mba-content">
+						I received an MBA from Columbia Business School with honors.
+					</div>
+				</div>
+			</div>
+			<div class="my-experience">
+				<div class="title">
+					My experience with <span><strong>PRE</strong>VIVE?</span>
+				</div>
+				<div class="content">
+					PREVIVE is the result of attempting to succeed in my professional and academic pursuits while also partaking in New York’s seemingly limitless array of social activities. I have spent much of my free time since 2008 developing a convenient blend of nutrients to allow myself and other to socialize frequently without detriment to their everyday lives.
+				</div>
 			</div>
 		</div>
 	</div>
