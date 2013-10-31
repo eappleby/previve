@@ -844,7 +844,7 @@ font-size: 13px;
 	}
 }
 @media (max-width: 991px) {
-	.navbar-brand p.tagline {		
+	.navbar-brand span.tagline {		
 		display:none;
 	}
 	.feature {
