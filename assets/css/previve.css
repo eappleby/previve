@@ -1,0 +1,923 @@
+/*
+@font-face
+{
+font-family: gothamBlackItalic;
+src: url(assets/fonts/Gotham-Blackitalic.otf);
+}
+@font-face
+{
+font-family: gothamBoldItalic;
+src: url(assets/fonts/Gotham-BoldItalic.otf);
+}
+@font-face
+{
+font-family: gothamBook;
+src: url(assets/fonts/Gotham-Book.otf);
+}
+@font-face
+{
+font-family: gothamBookItalic;
+src: url(assets/fonts/Gotham-BookItalic.otf);
+}
+@font-face
+{
+font-family: gothamExtraLight;
+src: url(assets/fonts/Gotham-extralight.otf);
+}
+@font-face
+{
+font-family: gothamExtraLightItalic;
+src: url(assets/fonts/Gotham-ExtraLightItalic.otf);
+}
+@font-face
+{
+font-family: gothamLightItalic;
+src: url(assets/fonts/Gotham-LightItalic.otf);
+}
+@font-face
+{
+font-family: gothamMediumItalic;
+src: url(assets/fonts/Gotham-MediumItalic.otf);
+}
+*/
+@font-face {
+	font-family: gothamLight;
+	src: url(../fonts/Gotham-Light.otf);
+}
+@font-face {
+font-family: gothamMedium;
+src: url(../fonts/Gotham-Medium.otf);
+}
+@font-face {
+	font-family: gothamBlack;
+	src: url(../fonts/Gotham-Black.otf);
+}
+@font-face {
+font-family: gothamBold;
+src: url(../fonts/Gotham-Bold.otf);
+}
+body {
+	font-family:gothamLight;
+	color: #1c2d70;
+	padding: 20px 0 0;
+	background-image: -ms-linear-gradient(bottom, #43c3f3 0, #FFFFFF 200px);
+	background-image: -moz-linear-gradient(bottom, #43c3f3 0, #FFFFFF 200px);
+	background-image: -o-linear-gradient(bottom, #43c3f3 0, #FFFFFF 200px);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #43c3f3), color-stop(200px, #FFFFFF));
+	background-image: -webkit-linear-gradient(bottom, #43c3f3 0, #FFFFFF 200px);
+	background-image: linear-gradient(to top, #43c3f3 0, #FFFFFF 30);
+}
+span.light {
+	color: #43c3f3;
+}
+span.dark {
+	color: #8783b7;
+}
+.navbar-default {
+	background-color:inherit;
+	border-color: #fff;
+}
+.navbar-brand {
+	padding: 5px 15px;
+}
+.navbar-brand span.logo {
+	text-transform:uppercase;
+	font-style:normal;
+	font-size:24px;
+	margin-right:5px;
+}
+.navbar-brand span.tagline {
+	font-style:italic;
+	font-size:12px;
+	font-family:times;
+	display:inline;
+	color: #1c2d70;
+}
+.navbar-default .navbar-nav {
+	margin-top:3px;
+	font-size: 12px;
+}
+.navbar-default .navbar-nav li a {
+	border-right:1px solid #1c2d70;
+	padding: 0 15px;
+	margin: 5px 0;
+	line-height:12px;
+	color: #1c2d70;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+	color: #1c2d70;
+	text-decoration:underline;
+}
+.navbar-default .navbar-nav li.btn-shop a, .navbar-default .navbar-nav li:last-child a{
+	border-right:0;
+}
+.navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li.active a:hover, .navbar-default .navbar-nav li.active a:focus {
+	background-color:#fff;
+	color: #43c3f3;
+	font-weight:bold;
+}
+.navbar-default .navbar-nav li.btn-shop a {
+	font-family:times;
+	font-style:italic;
+	background: #1c2d70;
+	color:#fff;
+	padding: 5px 15px;
+	margin: 0;
+	line-height: 20px;
+	margin-top: -4px;
+}
+.navbar-default .navbar-nav li.btn-shop a:hover {
+	color:#dcdcdc;
+	background:#1c2d70;
+	text-decoration:none;
+}
+.navbar-toggle {
+	margin-top:0;
+}
+.wrapper {
+	background:#fff;
+}
+.wrapper-disclaimer {
+	padding: 20px 0;
+}
+.page-title {
+	text-align: center;
+	padding: 20px 0 50px;
+	font-size: 26px;
+}
+.disclaimer {
+	font-size:10px;
+}
+.masthead {
+	text-align:center;
+	padding-bottom:50px;
+}
+.inactive-link, .inactive-link:hover {
+	color: #c1c1c1;
+	text-decoration: none;
+}
+.circle-top, .circle-bottom {
+	position: absolute;
+	right: -7px;
+	width: 11px;
+	height: 11px;
+	float: left;
+	margin: 0;
+	border-radius: 50%;
+	background: #1c2d70;
+}
+.circle-top {
+	top: -6px;
+}
+.circle-bottom {
+	bottom: -6px;
+}
+.hole-top {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	float: left;
+	margin: 0;
+	border-radius: 50%;
+	background: #1c2d70;
+	right: -7px;
+	top: -6px;
+}
+.arrow-bottom {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #1c2d70;
+	right: -10px;
+	bottom: -6px;
+}
+
+
+/* HOMEPAGE */
+
+h3.logo{
+	text-transform:uppercase;
+	font-family:gothamLight;
+	font-size:32px;
+}
+h4.tagline{
+	font-family:times;
+	font-style:italic;
+	font-size:18px;
+	font-weight:bold;
+	color: #000080;
+}
+.feature {
+	overflow:hidden;
+	padding-bottom:80px;
+	padding-left: 115px;
+}
+.feature-messaging {
+	padding-top:120px;
+	text-align:left;
+}
+.feature-messaging span.large {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+}
+.feature-messaging span.light {
+	font-family:times;
+	font-size:22px;
+}
+.feature-image {
+	text-align:right;
+	padding-right: 80px;
+}
+.feature-image img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;	
+}
+.wrapper-navbar-hp {
+	margin-bottom:40px;
+}
+.navbar-hp {
+	text-align:center;
+	text-transform:uppercase;
+	padding: 8px 0;
+}
+
+/* Why 4 Pills */
+
+.container-narrow{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.straw-man-hypothesis {
+	font-family:times;
+	font-style:italic;
+	padding-bottom:30px;
+}
+#short-answer {
+	padding-bottom:30px;
+}
+#short-answer .short-title {
+	padding: 20px 0;
+	font-size: 18px;
+	display:inline-block;
+	width: 300px;
+	vertical-align: top;
+	text-transform: uppercase;
+}
+#short-answer .short-content {
+	display:inline-block;
+	width:565px;
+	margin-top:20px;
+}
+#short-answer .short-content .short-list-item {
+	margin-bottom:40px;
+}
+#short-answer .short-content .short-list-item .short-image{
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	margin-right:40px;
+	vertical-align: top;
+}
+#short-answer .short-content .short-list-item .short-explanation{
+	display:inline-block;
+	text-transform: uppercase;
+	width: 420px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#short-answer .short-content .short-list-item .short-explanation span{
+	display:block;
+	font-weight:bold;
+	font-size: 20px;
+}
+#long-answer {
+	padding-bottom:30px;
+}
+#long-answer .long-title {
+	padding: 20px 0;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#long-answer .long-intro {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom:20px;
+}
+#long-answer .long-criteria {
+	border:2px dotted #1c2d70;
+	padding:20px 20px 0;
+	width:400px;
+	margin:0 20px 20px 0;
+	display:inline-block;
+	vertical-align: top;
+}
+#long-answer .long-criteria .long-criteria-intro {
+	padding-bottom:15px;
+}
+#long-answer .long-criteria .long-criteria-intro span.stylish {
+	font-weight:normal;
+	font-style:italic;
+	font-family:times;
+}
+#long-answer .long-criteria .long-criteria-list .long-criteria-item {
+	padding-bottom:25px;
+}
+#long-answer .long-criteria .long-criteria-list .long-criteria-item .long-item-image {
+	display: inline-block;
+	margin-right: 5px;
+}
+#long-answer .long-criteria .long-criteria-list .long-criteria-item .long-item-content {
+	display: inline-block;
+}
+#long-answer .long-explanation {
+	display: inline-block;
+	width: 445px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.final-thoughts {
+	text-transform: uppercase;
+	font-size:18px;
+	padding-bottom:200px;
+}
+
+/* How it works */
+
+ul.row-how-it-works {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+ul.row-how-it-works li.navbar-how-it-works{
+	width: 10%;
+	margin-right: 12.5%;
+	padding: 0 0 10px;
+	text-align: center;
+	position: relative;
+	cursor:pointer;
+	color: #000080;
+}
+ul.row-how-it-works li.navbar-how-it-works:after {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: -3px;
+	right: -3px;
+	height: 3px;
+	background-image: -webkit-gradient(radial, 50% 0, 50% 0, from(#1c2d70), to(transparent));
+	background-image: -webkit-radial-gradient(center, #1c2d70, transparent);
+	background-image: -moz-radial-gradient(center, #1c2d70, transparent);
+	background-image: -o-radial-gradient(center, #1c2d70, transparent);
+}
+ul.row-how-it-works li.navbar-how-it-works:last-child{
+	margin-right:0;
+}
+ul.row-how-it-works li.active{
+	color: #43c3f3;
+}
+ul.row-how-it-works li.active:after{
+	background-image: -webkit-gradient(radial, 50% 0, 50% 0, from(#43c3f3), to(transparent));
+	background-image: -webkit-radial-gradient(center, #43c3f3, transparent);
+	background-image: -moz-radial-gradient(center, #43c3f3, transparent);
+	background-image: -o-radial-gradient(center, #43c3f3, transparent);
+}
+.explanation {
+	width: 710px;
+	height: 260px;
+	margin: 80px auto 0;
+	line-height: 25px;
+}
+.explanation .header {
+	font-size:26px;
+	margin-right:4px;
+	display:inline;
+}
+.explanation .header span {
+	margin-right:4px;
+}
+.explanation .text {
+	display:inline;
+}
+.periodic-table {
+	width:100%;
+	margin: 0 auto;
+	padding-bottom:120px;
+}
+.periodic-table .row {
+	display:block;
+	margin:0 0 20px 0;
+}
+.periodic-table .row .sub-row, .periodic-table .row .sub-row .sub-sub-row {
+	display:inline-block;
+}
+.periodic-table .row .sub-row .sub-sub-row .element {
+	width:70px;
+	height:70px;
+	background-image:url("../img/how-it-works-sprite.png");
+	background-position: 0 0;
+	margin-right: 12px;
+	display:inline-block;
+}
+.periodic-table .row:last-child .sub-row .sub-sub-row .element {
+	background-position-y: 219px;
+}
+#periodic-ala, #periodic-nac {
+	background-position-x: 944px;
+}
+#periodic-b1, #periodic-milk {
+	background-position-x: 865px;
+}
+#periodic-b2, #periodic-mg {
+	background-position-x: 785px;
+}
+#periodic-b3, #periodic-mn {
+	background-position-x: 705px;
+}
+#periodic-b5, #periodic-mo {
+	background-position-x: 627px;
+}
+#periodic-b6, #periodic-se {
+	background-position-x: 547px;
+}
+#periodic-b12, #periodic-tau {
+	background-position-x: 467px;
+}
+#periodic-bfn, #periodic-turmeric {
+	background-position-x: 388px;
+}
+#periodic-c, #periodic-zn {
+	background-position-x: 308px;
+}
+#periodic-cr, #periodic-affordable {
+	background-position-x: 229px;
+}
+#periodic-e, #periodic-convenient {
+	background-position-x: 149px;
+}
+#periodic-fte {
+	background-position-x: 70px;
+}
+#periodic-grape {
+	background-position-x: 1024px;
+}
+
+/* Frequently Asked Questions */
+
+.faq {
+	padding-bottom:100px;
+}
+.faq .question-list {
+	position:relative;
+	vertical-align: top;
+	display:inline-block;
+	width:34%;
+	text-align:right;
+	border-right:3px solid #1c2d70;
+	padding-right:4%;
+	margin-right:4%;
+	font-family:times;
+	font-style:italic;
+}
+.faq .question-list a.question {
+	display:block;
+	margin:10px 0;
+}
+.faq .question-list a.active {
+	color: #43c3f3;
+}
+.faq .answer {
+	display: inline-block;
+	width: 60%;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* The PREVIVE Story */
+
+.story {
+	padding-bottom:100px;
+}
+.story-date {
+	margin-bottom:10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #00adef;
+	text-transform: uppercase;
+}
+.story-content {
+	font-family:gothamMedium;
+	font-size: 14px;
+}
+.large-num {
+	font-family: gothamBlack;
+	color: #43c3f3;
+	font-weight: bold;
+	font-size: 300px;
+	margin-bottom: -70px;
+}
+.highlight {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-family: gothamBold;
+}
+.highlight span {
+	font-family: gothamLight;
+	display: block;
+	font-size: 40px;
+}
+.story .left-pane {
+	position:relative;
+	vertical-align: top;
+	display:inline-block;
+	width:50%;
+	border-right:3px solid #1c2d70;
+	padding-right:5%;
+	margin-right:2%;
+	min-height: 4920px;
+}
+.story .right-pane {
+	position:relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	margin-top: 10px;
+}
+.story .left-pane .left-item{
+	position: absolute;
+	right: 30px;
+}
+.story .right-pane .right-item{
+	position: absolute;
+}
+.story .left-pane .left-item .story-date {
+	text-align:right;
+}
+#aug-18-2008 {
+	top:56px;
+}
+#aug-18-2008 .story-image {
+	margin: 5px 0 25px;
+	text-align: right;
+}
+#sep-27-2008 {
+	top: 375px;
+}
+#sep-27-2008 .story-image {
+	float: left;
+	margin-right: 30px;
+	margin-top: -23px;
+}
+#sep-27-2008 .story-content {
+	margin-top: 10px;
+}
+#pills-image {
+	top:570px;
+}
+#oct-27-2008 {
+	top:1100px;
+}
+#oct-27-2008 .story-content {
+	text-align: right;
+}
+#oct-27-2008 .story-content span {
+	display:block;
+	font-size:20px;
+}
+#development-goals-interlude {
+	position: absolute;
+	right: -204px;
+	top: 1400px;
+	background: white;
+	padding: 15px;
+	text-align: center;
+}
+#development-goals-interlude .intro {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#development-goals-interlude .intro-emphasis {
+	text-transform: uppercase;
+	font-size: 26px;
+}
+#story-num-1  {
+	top:1443px;
+}
+#oct-23-2009  {
+	top:2200px;
+}
+#oct-23-2009 .story-image {
+	text-align: right;
+	margin-bottom: 20px;
+}
+#oct-23-2009 .story-content {
+	margin-top:10px;
+}
+#story-num-3  {
+	top:2800px;
+}
+#story-num-3 .highlight {
+	margin-left: 150px;
+}
+#story-num-4  {
+	top:3500px;
+}
+#story-num-4 .highlight {
+	margin-left: 50px;
+}
+#previve-pagers-image {
+	top:4300px;
+}
+#nov-14-2012  {
+	position: absolute;
+	right: 0;
+	top:4700px;
+	text-align: center;
+	background: white;
+	padding: 15px;
+	right: -286px;
+	width: 100%;
+}
+#aug-17-2008 {
+	top:0;
+}
+#aug-17-2008 .story-image {
+	float:left;
+	margin-right:18px;
+}
+#oct-10-2008 {
+	top:400px;
+}
+#oct-10-2008 .story-image{
+	float:left;
+	margin-right:18px;
+}
+#oct-25-2008 {
+	top:874px;
+}
+#oct-25-2008 .story-image {
+	float: left;
+	margin-right:18px;
+	height: 200px;
+}
+#feb-22-2009 {
+	top:1640px;
+}
+#feb-22-2009 .story-date{
+	margin-bottom:30px;
+}
+#feb-22-2009 .story-image{
+	float:left;
+	margin-right:18px;
+}
+#feb-22-2009 .story-content {
+	padding-top: 64px;
+}
+#story-num-2 {
+	top:2000px;
+}
+#sep-17-2010 {
+	top:3100px;
+}
+#sep-17-2010 .story-image {
+	padding-bottom: 30px;
+}
+#jul-9-2012 {
+	top:3950px;
+}
+#jul-9-2012 .story-image {
+	float:left;
+	margin-right:18px;
+}
+#jul-9-2012 .story-date {
+	padding-top: 25px;
+}
+#jul-9-2012 .story-content span, #oct-4-2012 .story-content span {
+	font-family: gothamLight;
+	font-size: 20px;
+}
+#oct-4-2012 {
+	top:4400px;
+}
+.team {
+	padding-bottom: 400px;
+}
+.team .ian-weber {
+	float:left;
+	margin-right:-10px;
+}
+.team .ian-weber .intro span.ian{
+	text-transform: uppercase;
+	font-size:22px;
+	display:block;
+	padding-bottom:30px;
+}
+.team .ian-background .location{
+	margin-top: 100px;
+}
+.team .ian-background .location .loc-image{
+	float: left;
+	margin-right: 17px;
+}
+.team .ian-background .location .loc-content{
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.team .ian-background .resume .timeline{
+	position: relative;
+	margin-left: 8px;
+	margin-top: 75px;
+	vertical-align: top;
+	display: inline-block;
+	width: 400px;
+	border-left: 3px solid #1c2d70;
+	padding-left: 22px;
+	min-height: 400px;
+	float: left;
+	margin-right: 30px;
+}
+.team .ian-background .resume .timeline .title{
+	position: absolute;
+	top: -30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+}
+.team .ian-background .resume .timeline .undergrad{
+	position: absolute;
+	top: 42px;
+}
+.team .ian-background .resume .timeline .undergrad .undergrad-image{
+	padding-bottom:10px;
+}
+.team .ian-background .resume .timeline .undergrad .undergrad-content{
+	font-weight: bold;
+	font-size: 13px;
+}
+.team .ian-background .resume .timeline .work{
+	position: absolute;
+	top: 200px;
+}
+.team .ian-background .resume .timeline .work .work-image{
+	float: left;
+	margin-right: 15px;
+	height: 50px;
+}
+.team .ian-background .resume .timeline .work .work-content{
+	font-weight: bold;
+	font-size: 13px;
+}
+.team .ian-background .resume .timeline .mba{
+	position: absolute;
+	top: 320px;
+}
+.team .ian-background .resume .timeline .mba .mba-image{
+	float: left;
+	margin-right: 15px;
+	height: 50px;
+}
+.team .ian-background .resume .timeline .mba .mba-content{
+	font-weight: bold;
+	font-size: 13px;
+}
+.team .ian-background .resume .timeline .hole-top {
+	left: -7px;
+}
+.team .ian-background .resume .timeline .arrow-bottom {
+	left: -10px;
+}
+.team .ian-background .resume .my-experience {
+	border: 2px dotted #1c2d70;
+	padding: 20px;
+	width: 400px;
+	margin: 64px 20px 20px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.team .ian-background .resume .my-experience .title {
+	font-family: times;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+	margin-top: -32px;
+	background: white;
+	width: 224px;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+.team .ian-background .resume .my-experience .title span {
+	font-family: gothamLight;
+	font-style: normal;
+	font-weight: normal;
+}
+.team .ian-background .resume .my-experience .title span strong{
+font-weight: normal;
+color: #66CCCC;
+}
+.team .ian-background .resume .my-experience .content {
+font-weight: bold;
+font-size: 13px;
+}
+
+@media (max-width: 1199px) {
+	.periodic-table {
+		text-align: center;
+	}
+	.periodic-table .row {
+		display: inline-block;
+		margin:0;
+	}
+	.periodic-table .row .sub-row:first-child, .periodic-table .row .sub-row:last-child {
+		display:block;
+	}
+	#periodic-blank {
+		width:0;
+		height:0;
+		margin-right: 0;
+		margin-left: -2px;
+	}
+}
+@media (max-width: 991px) {
+	.navbar-brand p.tagline {		
+		display:none;
+	}
+	.feature {
+		padding-left: 40px;
+	}
+	.feature-messaging {
+		padding-top: 40px;
+	}
+}
+@media (min-width:992px) and (max-width:1199px) {
+	#nov-14-2012 {
+		right: -236px;
+	}
+}
+@media (min-width:768px) and (max-width: 991px) {
+	#nov-14-2012 {
+		right: -182px;
+	}
+}
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav li a {
+		border-right:0;
+	}
+	.feature {
+		padding-left: 0px;
+		padding-bottom: 40px;
+	}
+	.feature-messaging {
+		display:none;
+	}
+	.feature-image {
+		max-width:90%;
+		padding-right: 0;
+		text-align:center;
+	}
+	#short-answer .short-content .short-image {
+		width:90px !important;
+		margin-right:30px;
+	}
+	#long-answer .long-criteria, #long-answer .long-explanation {
+		width:100%;
+	}
+	ul.row-how-it-works li.navbar-how-it-works, ul.row-how-it-works li.navbar-how-it-works:last-child {
+		text-align: center;
+		width: 30%;
+		margin: 15px auto;
+	}
+	.explanation {
+		width: 90%;
+		height: auto;
+		margin: 40px auto;
+		line-height: 25px;
+	}
+	#nov-14-2012 {
+		right: -50%;
+	}
+}
+@media (max-width: 599px) {
+	#short-answer .short-content .short-explanation {
+		width:230px !important;
+		margin-right:30px !important;
+	}
+}
+@media (max-width: 479px) {
+	#short-answer .short-content .short-image {
+		width:80px !important;
+		margin-right:20px;
+	}
+	.periodic-table .row .sub-row .sub-sub-row {
+		display:block;
+	}
+}
