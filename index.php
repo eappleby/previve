@@ -34,10 +34,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="navbar-hp col-sm-2"><a href="#">Shop Online</a></div>
-					<div class="navbar-hp col-sm-2"><a href="previve-story.html">The Previve Story</a></div>
-					<div class="navbar-hp col-sm-2"><a href="how-it-works.html">How It Works</a></div>
-					<div class="navbar-hp col-sm-2"><a href="why-four-pills.html">Why Four Pills?</a></div>
-					<div class="navbar-hp col-sm-2"><a href="faq.html">FAQ</a></div>
+					<div class="navbar-hp col-sm-2"><a href="previve-story">The Previve Story</a></div>
+					<div class="navbar-hp col-sm-2"><a href="how-it-works">How It Works</a></div>
+					<div class="navbar-hp col-sm-2"><a href="why-four-pills">Why Four Pills?</a></div>
+					<div class="navbar-hp col-sm-2"><a href="faq">FAQ</a></div>
 					<div class="navbar-hp col-sm-2"><a class="inactive-link" href="#">Press</a></div>
 				</div>
 			</div>
@@ -52,5 +52,6 @@
 		</div>
 		<script src="assets/js/jquery.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/css3-mediaqueries.js"></script>
 	</body>
 </html>
