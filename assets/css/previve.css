@@ -5,18 +5,21 @@
 @font-face {
 	font-family: gothamLight;
 	src: url(../fonts/Gotham-Light.otf);
+	src: url(../fonts/Gotham-Light.ttf) format("truetype");
 }
 @font-face {
-font-family: gothamMedium;
-src: url(../fonts/Gotham-Medium.otf);
+	font-family: gothamMedium;
+	src: url(../fonts/Gotham-Medium.otf);
+	src: url(../fonts/gotham-medium-webfont.ttf) format("truetype");
 }
 @font-face {
 	font-family: gothamBlack;
 	src: url(../fonts/Gotham-Black.otf);
 }
 @font-face {
-font-family: gothamBold;
-src: url(../fonts/Gotham-Bold.otf);
+	font-family: gothamBold;
+	src: url(../fonts/Gotham-Bold.otf);
+	src: url(../fonts/Gotham-Bold.ttf) format("truetype");
 }
 body {
 	font-family:gothamLight;
