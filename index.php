@@ -34,7 +34,7 @@
 				</div>
 				<div class="col-sm-6 feature-messaging">
 					<p><span class="large">ENERGIZES</span> <span class="light">your night</span></p>
-					<p><span class="large">PREVENTS</span> <span class="light">hangover symptons</span></p>
+					<p><span class="large">PREVENTS</span> <span class="light">hangover symptoms</span></p>
 					<p><span class="large">PROMOTES</span> <span class="light">long-term wellness</span></p>
 				</div>
 			</div>
