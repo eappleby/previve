@@ -2,7 +2,6 @@
 @include font-face("gothamMedium", "../fonts/Gotham-Medium.otf");
 @include font-face("gothamBlack", "../fonts/Gotham-Black.otf");
 @include font-face("gothamBold", "../fonts/Gotham-Bold.otf");
-@include font-face("mrsEavesRoman", "../fonts/Gotham-Black.otf");
 @include font-face("mrsEavesItalic", "../fonts/Gotham-Bold.otf");
 @font-face {
 	font-family: gothamLight;
@@ -25,11 +24,6 @@
 	src: url(../fonts/Gotham-Bold.otf);
 	src: url(../fonts/Gotham-Bold.ttf) format("truetype");
 	src: url(../fonts/gotham-bold-webfont.woff) format("woff");
-}
-@font-face {
-	font-family: mrsEavesRoman;
-	src: url(../fonts/Gotham-Medium.otf);
-	src: url(../fonts/mrseavesroman.ttf) format("truetype");
 }
 @font-face {
 	font-family: mrsEavesItalic;
@@ -840,6 +834,10 @@ ul.row-how-it-works li.active:after{
 	}
 	.navbar-brand span.tagline {		
 		display:none;
+	}
+	ul.row-how-it-works li.navbar-how-it-works{
+		width: 16%;
+		margin-right: 5%;
 	}
 }
 @media (max-width: 1090px) {
