@@ -8,11 +8,13 @@
 	font-family: gothamLight;
 	src: url(../fonts/Gotham-Light.otf);
 	src: url(../fonts/Gotham-Light.ttf) format("truetype");
+	src: url(../fonts/gotham-light-webfont.woff) format("woff");
 }
 @font-face {
 	font-family: gothamMedium;
 	src: url(../fonts/Gotham-Medium.otf);
 	src: url(../fonts/gotham-medium-webfont.ttf) format("truetype");
+	src: url(../fonts/gotham-medium-webfont.woff) format("woff");
 }
 @font-face {
 	font-family: gothamBlack;
@@ -22,6 +24,7 @@
 	font-family: gothamBold;
 	src: url(../fonts/Gotham-Bold.otf);
 	src: url(../fonts/Gotham-Bold.ttf) format("truetype");
+	src: url(../fonts/gotham-bold-webfont.woff) format("woff");
 }
 @font-face {
 	font-family: mrsEavesRoman;
