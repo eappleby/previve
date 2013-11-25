@@ -60,6 +60,7 @@ span.dark {
 	font-style:normal;
 	font-size:24px;
 	margin-right:5px;
+	color: #132D76;
 }
 .navbar-brand span.tagline {
 	font-size:12px;
@@ -186,7 +187,6 @@ h3.logo{
 h4.tagline{
 	font-family:mrsEavesItalic;
 	font-size:18px;
-	font-weight:bold;
 }
 .feature {
 	overflow:hidden;
