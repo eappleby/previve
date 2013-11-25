@@ -27,8 +27,8 @@
 }
 @font-face {
 	font-family: mrsEavesItalic;
-	src: url(../fonts/Gotham-Bold.otf);
 	src: url(../fonts/mrseavesitalic.ttf) format("truetype");
+	src: url(../fonts/mrseavesItalic.woff) format("woff");
 }
 body {
 	font-family:gothamLight;
