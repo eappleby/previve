@@ -48,6 +48,9 @@ span.light {
 span.dark {
 	color: #8A8EBA;
 }
+span.darker {
+	#132D76;
+}
 .navbar-default {
 	background-color:inherit;
 	border-color: #fff;
@@ -813,6 +816,87 @@ ul.row-how-it-works li.active:after{
 .team .ian-background .resume .my-experience .content {
 	font-family: gothamMedium;
 	font-size: 13px;
+}
+
+/* SHOP */
+
+#shop .purchase-options {
+	list-style-type:none;
+	padding:25px 0 200px;
+}
+#shop .purchase-options .row {
+	display:block;
+	margin: 0 50px 20px;
+}
+#shop .purchase-options .row .product {
+	float:left;
+}
+#shop .purchase-options .row .product:last-child {
+	float:right;
+}
+#shop .purchase-options .row .product .visual {
+	width: 300px;
+	float: left;
+}
+#shop .purchase-options .row .product .visual .packaging-small {
+	padding-top:60px;
+}
+#shop .purchase-options .row .product .visual .packaging img {
+	height:220px;
+}
+#shop .purchase-options .row .product .visual .packaging-small img {
+	height:160px;
+}
+#shop .purchase-options .row .product .visual .description{
+	margin-left: 51px;
+	margin-top: -100px;
+	opacity: .5;
+	font-family: gothamLight;
+	color: #00AEEF;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+#shop .purchase-options .row .product .visual .description .count{
+	font-family: gothamBlack;
+	font-size: 120px;
+	font-weight: normal;
+	float: left;
+	margin-right: 10px;
+}
+#shop .purchase-options .row .product .visual .description .info{
+	margin-top: 103px;
+	float: left;
+}
+#shop .purchase-options .row .product .pricing {
+	float:left;
+	margin-top: 140px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: gothamBold;
+	color: #132D76;
+}
+#shop .purchase-options .row .product .pricing span{
+	font-size:18px;
+}
+#shop .purchase-options .row .product .pricing span.price{
+	color: #00AEEF;
+}
+#shop .purchase-options .row .product .pricing .checkout-button{
+	margin-top:25px;
+}
+#shop .purchase-options .row .product .pricing .checkout-button a.btn-buy{
+font-family: gothamLight;
+background: #00AEEF;
+color: #fff;
+padding: 5px 15px;
+margin: 0;
+line-height: 20px;
+margin-top: -4px;
+}
+#shop .purchase-options .row .product .pricing .checkout-button a.btn-buy:hover{
+color: #dcdcdc;
+text-decoration: none;
 }
 
 @media (max-width: 1199px) {
