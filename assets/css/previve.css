@@ -1011,4 +1011,16 @@ text-decoration: none;
 	.periodic-table .row .sub-row .sub-sub-row {
 		display:block;
 	}
+	#shop .purchase-options .row .product .visual {
+		display:none;
+	}
+	#shop .purchase-options .row .product {
+		width: 300px;
+		height: 200px;
+	}
+	#shop .purchase-options .row .product .pricing {
+		width: 170px;
+		float:none;
+		margin: 0 auto;
+	}
 }
