@@ -42,7 +42,7 @@
 		<div class="wrapper wrapper-navbar-hp">
 			<div class="container">
 				<div class="row">
-					<div class="navbar-hp col-sm-2"><a href="#">Shop Online</a></div>
+					<div class="navbar-hp col-sm-2"><a href="shop">Shop Online</a></div>
 					<div class="navbar-hp col-sm-2 hidden-xs"><a href="previve-story">The Previve Story</a></div>
 					<div class="navbar-hp col-sm-2"><a href="how-it-works">How It Works</a></div>
 					<div class="navbar-hp col-sm-2"><a href="why-four-pills">Why Four Pills?</a></div>

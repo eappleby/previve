@@ -931,6 +931,15 @@ text-decoration: none;
 	.feature-messaging span.light {
 		font-size:18px;
 	}
+	#shop .purchase-options .row {
+		margin: 0;
+	}
+	#shop .purchase-options .row .product {
+		float: none !important;
+		height: 350px;
+		width: 470px;
+		margin: 0 auto;
+	}
 }
 @media (max-width: 991px) {
 	.feature {
