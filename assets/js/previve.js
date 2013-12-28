@@ -130,4 +130,27 @@ $(document).ready(function(){
 		$('#where-to-buy').removeClass("active");
 		link.addClass("active");
 	}
+	$(".arrow-selector").on("click", function() {
+		var arrow = $(this);
+		var numboxes = arrow.parent().parent().children(".num-boxes");
+		var doses = arrow.parent().parent().parent().parent().children(".description").children("span.doses");
+		var pills = arrow.parent().parent().parent().parent().children(".description").children("span.pills");
+		var price = arrow.parent().parent().parent().parent().children(".price").children("span.price");
+		var btnbuy = arrow.parent().parent().parent().parent().children(".checkout-button").children("a.btn-buy");
+
+		if (arrow.hasClass("arrow-up")) {
+			var newVal = parseFloat(numboxes.text()) + 1;
+		} else {
+			if (numboxes.text() > 3) {
+				var newVal = parseFloat(numboxes.text()) - 1;
+			} else {
+				newVal = 3;
+			}
+		}
+		numboxes.text(newVal);
+		doses.text(newVal * 10);
+		pills.text(newVal * 40);
+		price.text("$" + (newVal * 10 * 1.83).toFixed(2));
+		btnbuy.attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=TG9JEYXZQ8YNG&lc=US&item_name=PREVIVE%20%2d%20Box&item_number=0001&amount=18%2e3&currency_code=USD&quantity="+newVal);
+	});
 });
