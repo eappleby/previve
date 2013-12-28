@@ -979,6 +979,11 @@ margin-top: -4px;
 color: #dcdcdc;
 text-decoration: none;
 }
+#confirmation .message {
+	width: 710px;
+	margin: 40px auto 200px;
+	line-height: 25px;
+}
 
 @media (max-width: 1199px) {
 	.periodic-table {
@@ -1072,6 +1077,10 @@ text-decoration: none;
 		width: 90%;
 		height: auto;
 		margin: 40px auto;
+		line-height: 25px;
+	}
+	.#confirmation .message {
+		width: 90%;
 		line-height: 25px;
 	}
 	#nov-14-2012 {
