@@ -151,6 +151,6 @@ $(document).ready(function(){
 		doses.text(newVal * 10);
 		pills.text(newVal * 40);
 		price.text("$" + (newVal * 10 * 1.83).toFixed(2));
-		btnbuy.attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=TG9JEYXZQ8YNG&lc=US&item_name=PREVIVE%20%2d%20Box&item_number=0001&amount=18%2e3&currency_code=USD&quantity="+newVal);
+		btnbuy.attr("href", "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C7VEYUUPPZHJL&quantity="+newVal);
 	});
 });
